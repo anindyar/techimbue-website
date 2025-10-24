@@ -20,11 +20,13 @@ window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
 
     if (currentScroll > 100) {
-        navbar.style.background = 'rgba(26, 26, 46, 0.8)';
+        navbar.style.background = 'rgba(255, 255, 255, 0.98)';
         navbar.style.padding = '0.75rem 0';
+        navbar.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.08)';
     } else {
-        navbar.style.background = 'var(--glass-bg)';
+        navbar.style.background = 'rgba(255, 255, 255, 0.95)';
         navbar.style.padding = '1rem 0';
+        navbar.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.05)';
     }
 
     lastScroll = currentScroll;
@@ -85,10 +87,12 @@ if (mobileMenuToggle) {
             navLinks.style.top = '100%';
             navLinks.style.left = '0';
             navLinks.style.right = '0';
-            navLinks.style.background = 'rgba(26, 26, 46, 0.95)';
+            navLinks.style.background = 'rgba(255, 255, 255, 0.98)';
             navLinks.style.padding = '2rem';
-            navLinks.style.backdropFilter = 'blur(10px)';
+            navLinks.style.backdropFilter = 'blur(20px)';
             navLinks.style.borderRadius = '0 0 20px 20px';
+            navLinks.style.borderTop = '1px solid #E5E7EB';
+            navLinks.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.08)';
         } else {
             navLinks.style.display = 'none';
         }
@@ -266,7 +270,8 @@ window.addEventListener('scroll', () => {
             document.querySelectorAll('.nav-links a').forEach(a => {
                 a.style.background = '';
             });
-            link.style.background = 'rgba(255, 255, 255, 0.1)';
+            link.style.background = '#F3F4F6';
+            link.style.color = '#FF6B35';
         }
     });
 });

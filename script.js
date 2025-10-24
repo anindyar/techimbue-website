@@ -269,9 +269,10 @@ window.addEventListener('scroll', () => {
         if (link && scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             document.querySelectorAll('.nav-links a').forEach(a => {
                 a.style.background = '';
+                a.style.color = '';
             });
-            link.style.background = '#F3F4F6';
-            link.style.color = '#FF6B35';
+            link.style.background = '#F5F5F5';
+            link.style.color = '#C9A961';
         }
     });
 });

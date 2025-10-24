@@ -136,10 +136,15 @@ const animateCounter = (element, target, duration = 2000) => {
     }, 16);
 };
 
-// Tech graph interaction
-const techNodes = document.querySelectorAll('.tech-node');
-techNodes.forEach(node => {
-    node.style.cursor = 'pointer';
+// Tech cards interaction
+const techCards = document.querySelectorAll('.tech-card');
+techCards.forEach(card => {
+    card.addEventListener('mouseenter', () => {
+        card.style.animationPlayState = 'paused';
+    });
+    card.addEventListener('mouseleave', () => {
+        card.style.animationPlayState = 'running';
+    });
 });
 
 // Observe stats for counter animation (only for numeric values)

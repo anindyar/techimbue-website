@@ -959,14 +959,16 @@ body {
     justify-content: center;
     margin-bottom: 2rem;
     padding: 1.5rem;
-    background: var(--deep-charcoal);
+    background: var(--pure-white);
     border-radius: 12px;
     transition: all 0.3s ease;
+    box-shadow: var(--shadow-subtle);
 }
 
 .client-card:hover .client-logo-wrapper {
-    background: var(--charcoal);
+    background: var(--pure-white);
     box-shadow: var(--shadow-accent);
+    transform: translateY(-5px);
 }
 
 .client-logo {

@@ -829,6 +829,190 @@ body {
     color: rgba(255, 255, 255, 0.9);
 }
 
+.linkedin-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, #0077B5, #0A66C2);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.linkedin-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 119, 181, 0.4);
+    background: linear-gradient(135deg, #0A66C2, #004182);
+}
+
+.linkedin-link svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Book Section */
+.book-section {
+    padding: 6rem 0;
+    position: relative;
+}
+
+.book-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.book-cover-container {
+    position: relative;
+}
+
+.book-cover {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+}
+
+.book-cover:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 50px rgba(0, 168, 232, 0.4);
+}
+
+.book-badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: linear-gradient(135deg, #FF6B6B, #FF5252);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.book-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.book-title {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, #ffffff, var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.2;
+}
+
+.book-author {
+    font-size: 1.2rem;
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.book-description {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.8;
+}
+
+.book-description p {
+    margin-bottom: 1rem;
+}
+
+.book-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin: 1rem 0 1.5rem 0;
+    padding-left: 0;
+}
+
+.book-features li {
+    color: rgba(255, 255, 255, 0.9);
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.book-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.book-cta-text {
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.85);
+    padding: 1rem;
+    background: rgba(0, 168, 232, 0.08);
+    border-left: 3px solid var(--primary);
+    border-radius: 6px;
+    margin-top: 1rem;
+}
+
+.book-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.book-actions .btn-primary,
+.book-actions .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.book-actions svg {
+    width: 20px;
+    height: 20px;
+}
+
+.book-formats {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.format-badge {
+    padding: 0.5rem 1rem;
+    background: rgba(0, 168, 232, 0.1);
+    border: 1px solid rgba(0, 168, 232, 0.3);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
 /* About Section */
 .about {
     padding: 6rem 0;
@@ -1043,6 +1227,17 @@ body {
     .tech-card-label {
         font-size: 0.85rem;
     }
+
+    .book-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .book-cover-container {
+        max-width: 250px;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 640px) {
@@ -1126,6 +1321,33 @@ body {
 
     .service-card {
         padding: 2rem;
+    }
+
+    .book-content {
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .book-cover-container {
+        max-width: 200px;
+    }
+
+    .book-title {
+        font-size: 1.75rem;
+    }
+
+    .book-author {
+        font-size: 1rem;
+    }
+
+    .book-actions {
+        flex-direction: column;
+    }
+
+    .book-actions .btn-primary,
+    .book-actions .btn-secondary {
+        width: 100%;
+        justify-content: center;
     }
 }
 

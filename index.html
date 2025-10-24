@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechImbue | Advanced Technology Solutions</title>
+    <meta name="description" content="TechImbue provides cutting-edge infrastructure consultancy, cybersecurity, custom AI workflows, local AI solutions, and AI interpretability services.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="background">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="#home" class="logo">
+                    <img src="logo.jpg" alt="TechImbue - Technology. Inspiring.">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#clients">Clients</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact" class="btn-primary">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="glitch" data-text="TechImbue">TechImbue</h1>
+                <p class="hero-subtitle">Technology. Inspiring.</p>
+                <p class="hero-description">
+                    Empowering enterprises with cutting-edge infrastructure, cybersecurity,
+                    and AI solutions that transform possibilities into reality.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn-primary btn-large">Explore Services</a>
+                    <a href="#contact" class="btn-secondary btn-large">Get in Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="tech-stack-visual">
+                    <svg class="tech-graph" viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Central Hub -->
+                        <circle class="hub-circle" cx="210" cy="210" r="40" />
+                        <circle class="hub-glow" cx="210" cy="210" r="45" />
+                        <text class="hub-text" x="210" y="215" text-anchor="middle">TechImbue</text>
+
+                        <!-- Infrastructure Node -->
+                        <g class="tech-node node-1">
+                            <circle class="node-glow" cx="210" cy="90" r="40" />
+                            <circle cx="210" cy="90" r="35" />
+                            <text x="210" y="90" text-anchor="middle">☁️</text>
+                            <text class="node-label" x="210" y="125" text-anchor="middle">Infrastructure</text>
+                        </g>
+
+                        <!-- Security Node -->
+                        <g class="tech-node node-2">
+                            <circle class="node-glow" cx="330" cy="210" r="40" />
+                            <circle cx="330" cy="210" r="35" />
+                            <text x="330" y="210" text-anchor="middle">🔒</text>
+                            <text class="node-label" x="330" y="245" text-anchor="middle">Security</text>
+                        </g>
+
+                        <!-- AI Node -->
+                        <g class="tech-node node-3">
+                            <circle class="node-glow" cx="210" cy="330" r="40" />
+                            <circle cx="210" cy="330" r="35" />
+                            <text x="210" y="330" text-anchor="middle">🤖</text>
+                            <text class="node-label" x="210" y="365" text-anchor="middle">AI/ML</text>
+                        </g>
+
+                        <!-- Automation Node -->
+                        <g class="tech-node node-4">
+                            <circle class="node-glow" cx="90" cy="210" r="40" />
+                            <circle cx="90" cy="210" r="35" />
+                            <text x="90" y="210" text-anchor="middle">⚡</text>
+                            <text class="node-label" x="90" y="245" text-anchor="middle">Automation</text>
+                        </g>
+
+                        <!-- Connection Lines -->
+                        <line class="connection-line line-1" x1="210" y1="170" x2="210" y2="125" />
+                        <line class="connection-line line-2" x1="250" y1="210" x2="295" y2="210" />
+                        <line class="connection-line line-3" x1="210" y1="250" x2="210" y2="295" />
+                        <line class="connection-line line-4" x1="170" y1="210" x2="125" y2="210" />
+
+                        <!-- Animated data particles -->
+                        <circle class="data-particle particle-1" r="4" cx="210" cy="170">
+                            <animateMotion dur="3s" repeatCount="indefinite"
+                                path="M 0,0 L 0,-45" />
+                        </circle>
+                        <circle class="data-particle particle-2" r="4" cx="250" cy="210">
+                            <animateMotion dur="3s" repeatCount="indefinite"
+                                path="M 0,0 L 45,0" />
+                        </circle>
+                        <circle class="data-particle particle-3" r="4" cx="210" cy="250">
+                            <animateMotion dur="3s" repeatCount="indefinite"
+                                path="M 0,0 L 0,45" />
+                        </circle>
+                        <circle class="data-particle particle-4" r="4" cx="170" cy="210">
+                            <animateMotion dur="3s" repeatCount="indefinite"
+                                path="M 0,0 L -45,0" />
+                        </circle>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Comprehensive technology solutions tailored to your needs</p>
+
+            <div class="services-grid">
+                <!-- Service 1: Infrastructure Consultancy -->
+                <div class="service-card glass">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                            <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                            <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                            <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                        </svg>
+                    </div>
+                    <h3>Infrastructure Consultancy</h3>
+                    <p>Strategic guidance for building scalable, resilient infrastructure. From cloud architecture to on-premise solutions, we optimize your technology foundation.</p>
+                    <ul class="service-features">
+                        <li>Cloud Architecture Design</li>
+                        <li>System Optimization</li>
+                        <li>Performance Tuning</li>
+                        <li>Disaster Recovery Planning</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2: CyberSecurity -->
+                <div class="service-card glass">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3>CyberSecurity</h3>
+                    <p>Comprehensive security solutions to protect your digital assets. Advanced threat detection, vulnerability assessment, and security architecture design.</p>
+                    <ul class="service-features">
+                        <li>Security Audits & Penetration Testing</li>
+                        <li>Threat Intelligence</li>
+                        <li>Compliance Management</li>
+                        <li>Incident Response</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3: Custom AI Workflows -->
+                <div class="service-card glass featured">
+                    <div class="featured-badge">Popular</div>
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                        </svg>
+                    </div>
+                    <h3>Hyper Custom AI Workflows</h3>
+                    <p>Bespoke AI solutions designed specifically for your business processes. From ideation to deployment, we craft intelligent workflows that deliver results.</p>
+                    <ul class="service-features">
+                        <li>Custom Model Development</li>
+                        <li>Workflow Automation</li>
+                        <li>Integration & Deployment</li>
+                        <li>Continuous Optimization</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4: Local AI -->
+                <div class="service-card glass">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                            <rect x="9" y="9" width="6" height="6"></rect>
+                            <line x1="9" y1="1" x2="9" y2="4"></line>
+                            <line x1="15" y1="1" x2="15" y2="4"></line>
+                            <line x1="9" y1="20" x2="9" y2="23"></line>
+                            <line x1="15" y1="20" x2="15" y2="23"></line>
+                            <line x1="20" y1="9" x2="23" y2="9"></line>
+                            <line x1="20" y1="14" x2="23" y2="14"></line>
+                            <line x1="1" y1="9" x2="4" y2="9"></line>
+                            <line x1="1" y1="14" x2="4" y2="14"></line>
+                        </svg>
+                    </div>
+                    <h3>Local AI Solutions</h3>
+                    <p>Privacy-first AI deployments running entirely on your infrastructure. Maintain complete control over your data while leveraging cutting-edge AI capabilities.</p>
+                    <ul class="service-features">
+                        <li>On-Premise AI Deployment</li>
+                        <li>Privacy-Preserving AI</li>
+                        <li>Edge Computing Solutions</li>
+                        <li>Model Optimization for Local Hardware</li>
+                    </ul>
+                </div>
+
+                <!-- Service 5: AI Interpretability & Audit -->
+                <div class="service-card glass">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <h3>AI Interpretability & Audit</h3>
+                    <p>Ensure transparency and trust in your AI systems. Comprehensive audits, explainability analysis, and compliance verification for responsible AI deployment.</p>
+                    <ul class="service-features">
+                        <li>Model Explainability Analysis</li>
+                        <li>Bias Detection & Mitigation</li>
+                        <li>AI Compliance Audits</li>
+                        <li>Ethical AI Consulting</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients">
+        <div class="container">
+            <h2 class="section-title">Tech 2 Tech Excellence</h2>
+            <p class="section-subtitle">We are a Tech 2 Tech company, partnering with leading technology enterprises to deliver sophisticated architectural and consultancy services</p>
+
+            <div class="clients-intro glass">
+                <p>
+                    Working closely with innovative tech companies, we provide extremely sophisticated
+                    architectural and consultancy services that power mission-critical infrastructure,
+                    security operations, and cutting-edge AI implementations across industries.
+                </p>
+            </div>
+
+            <div class="clients-grid">
+                <!-- Client 1: Inspire Infosol -->
+                <div class="client-card glass">
+                    <div class="client-logo-wrapper">
+                        <img src="inspire-logo.svg" alt="Inspire Infosol" class="client-logo">
+                    </div>
+                    <h3>Inspire Infosol</h3>
+                    <p class="client-description">
+                        Managing multi-airline cloud infrastructure with precision and reliability.
+                        We help Inspire Infosol deliver seamless cloud operations for multiple airlines,
+                        ensuring high availability and optimal performance.
+                    </p>
+                    <a href="https://www.inspireinfosol.com/" target="_blank" rel="noopener" class="client-link">
+                        Visit Website
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Client 2: Digital Insights -->
+                <div class="client-card glass">
+                    <div class="client-logo-wrapper">
+                        <img src="digital-insights-logo.webp" alt="Digital Insights UAE" class="client-logo">
+                    </div>
+                    <h3>Digital Insights</h3>
+                    <p class="client-description">
+                        Designing and running high-end Network Operations Centers (NOC) and Security
+                        Operations Centers (SOC) for multiple Middle East government departments,
+                        ensuring national security and operational excellence.
+                    </p>
+                    <a href="https://dicuae.com/" target="_blank" rel="noopener" class="client-link">
+                        Visit Website
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Client 3: Stortech -->
+                <div class="client-card glass">
+                    <div class="client-logo-wrapper">
+                        <img src="stortech-logo.png" alt="Stortech" class="client-logo">
+                    </div>
+                    <h3>Stortech</h3>
+                    <p class="client-description">
+                        Managing large-scale Kubernetes implementations that power enterprise-grade
+                        containerized applications. We enable Stortech to deliver robust, scalable
+                        orchestration solutions to their clients.
+                    </p>
+                    <a href="https://stortech.ae/" target="_blank" rel="noopener" class="client-link">
+                        Visit Website
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Client 4: Chimes Group -->
+                <div class="client-card glass">
+                    <div class="client-logo-wrapper">
+                        <img src="chimes-logo.jpg" alt="Chimes Group" class="client-logo">
+                    </div>
+                    <h3>Chimes Group</h3>
+                    <p class="client-description">
+                        Providing Fractional CTO and Fractional CAIO (Chief AI Officer) services,
+                        delivering executive-level technology and AI leadership to drive strategic
+                        innovation and digital transformation.
+                    </p>
+                    <a href="https://www.chimesgroup.in/" target="_blank" rel="noopener" class="client-link">
+                        Visit Website
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content glass">
+                <h2>Why TechImbue?</h2>
+                <p>
+                    At TechImbue, we blend deep technical expertise with innovative thinking to deliver
+                    solutions that don't just meet current needs—they anticipate future challenges.
+                    Our approach combines cutting-edge technology with practical, scalable implementations.
+                </p>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Client Satisfaction</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Support Available</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">Custom</div>
+                        <div class="stat-label">Solutions Tailored</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section id="founder" class="founder">
+        <div class="container">
+            <h2 class="section-title">About Our Founder</h2>
+            <p class="section-subtitle">Leadership driven by expertise, innovation, and a passion for technology</p>
+
+            <div class="founder-content glass">
+                <div class="founder-info">
+                    <h3>Anindya Roy</h3>
+                    <p class="founder-title">Founder & Chief Architect</p>
+
+                    <div class="founder-bio">
+                        <p>
+                            With over <strong>25 years of experience</strong> in the technology industry, Anindya Roy
+                            has built a distinguished career spanning infrastructure architecture, cybersecurity,
+                            and cutting-edge AI implementations. Currently serving as Chief Technology Officer at
+                            Digital Insights in Dubai, he brings unparalleled expertise to TechImbue's mission of
+                            delivering sophisticated technology solutions.
+                        </p>
+
+                        <div class="expertise-areas">
+                            <h4>Core Expertise</h4>
+                            <div class="expertise-tags">
+                                <span class="expertise-tag">Infrastructure & Cloud Architecture</span>
+                                <span class="expertise-tag">Cybersecurity & Compliance</span>
+                                <span class="expertise-tag">AI & Automation</span>
+                                <span class="expertise-tag">DevOps & CI/CD</span>
+                            </div>
+                        </div>
+
+                        <p>
+                            Anindya's career journey reflects a deep commitment to technology excellence. From his early days
+                            as a <strong>Tech Magazine Reviewer and Author</strong>, where he helped shape technology discourse,
+                            to his current role architecting enterprise-scale solutions for government and corporate clients,
+                            he has consistently been at the forefront of technological innovation.
+                        </p>
+
+                        <p>
+                            As a <strong>published author</strong>, Anindya recently released
+                            <a href="https://www.amazon.fr/Gen-AI-Leaders-hurry-English-ebook/dp/B0FK3YQHRB" target="_blank" rel="noopener" class="book-link">
+                                "Gen AI for Leaders in a Hurry"
+                            </a>,
+                            demonstrating his thought leadership in artificial intelligence and its strategic applications
+                            for business transformation.
+                        </p>
+
+                        <div class="founder-philosophy">
+                            <h4>Philosophy & Vision</h4>
+                            <p>
+                                "Technology should be an enabler, not a constraint. At TechImbue, we believe in building
+                                solutions that are not only technically excellent but also pragmatic and scalable. Our
+                                approach is rooted in deep understanding of both technology and business objectives—ensuring
+                                that every solution we architect drives real value and competitive advantage."
+                            </p>
+                            <p>
+                                With a focus on <strong>practical innovation</strong>, Anindya leads TechImbue with a
+                                philosophy that balances cutting-edge technology adoption with proven engineering principles.
+                                His extensive experience across diverse industries—from airlines to government sectors—enables
+                                TechImbue to deliver context-aware solutions that truly understand client challenges.
+                            </p>
+                        </div>
+
+                        <div class="founder-credentials">
+                            <div class="credential-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                                </svg>
+                                <span>Certified in Cyber Forensics Fundamentals</span>
+                            </div>
+                            <div class="credential-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                                </svg>
+                                <span>Published Author - "Gen AI for Leaders in a Hurry"</span>
+                            </div>
+                            <div class="credential-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                                <span>3000+ Professional Network</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content glass">
+                <h2>Let's Build Something Extraordinary</h2>
+                <p>Ready to transform your technology infrastructure? Get in touch to discuss how we can help.</p>
+                <div class="contact-methods">
+                    <a href="mailto:anindya@techimbue.com" class="contact-method">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <span>anindya@techimbue.com</span>
+                    </a>
+                </div>
+                <a href="mailto:anindya@techimbue.com" class="btn-primary btn-large">Start a Conversation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 TechImbue. All rights reserved.</p>
+            <p class="footer-tagline">Technology. Inspiring.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

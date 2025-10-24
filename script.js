@@ -20,13 +20,13 @@ window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
 
     if (currentScroll > 100) {
-        navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+        navbar.style.background = 'rgba(26, 26, 26, 0.98)';
         navbar.style.padding = '0.75rem 0';
-        navbar.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.08)';
+        navbar.style.boxShadow = '0 4px 16px rgba(0, 0, 0, 0.5)';
     } else {
-        navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+        navbar.style.background = 'rgba(26, 26, 26, 0.95)';
         navbar.style.padding = '1rem 0';
-        navbar.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.05)';
+        navbar.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.4)';
     }
 
     lastScroll = currentScroll;
@@ -87,12 +87,12 @@ if (mobileMenuToggle) {
             navLinks.style.top = '100%';
             navLinks.style.left = '0';
             navLinks.style.right = '0';
-            navLinks.style.background = 'rgba(255, 255, 255, 0.98)';
+            navLinks.style.background = 'rgba(26, 26, 26, 0.98)';
             navLinks.style.padding = '2rem';
             navLinks.style.backdropFilter = 'blur(20px)';
             navLinks.style.borderRadius = '0 0 20px 20px';
-            navLinks.style.borderTop = '1px solid #E5E7EB';
-            navLinks.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.08)';
+            navLinks.style.borderTop = '1px solid #3A3A3A';
+            navLinks.style.boxShadow = '0 4px 16px rgba(0, 0, 0, 0.5)';
         } else {
             navLinks.style.display = 'none';
         }
@@ -271,8 +271,8 @@ window.addEventListener('scroll', () => {
                 a.style.background = '';
                 a.style.color = '';
             });
-            link.style.background = '#F5F5F5';
-            link.style.color = '#C9A961';
+            link.style.background = '#2D2D2D';
+            link.style.color = '#D4AF37';
         }
     });
 });

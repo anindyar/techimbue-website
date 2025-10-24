@@ -55,26 +55,187 @@
             </div>
             <div class="hero-visual">
                 <div class="tech-cards-container">
-                    <div class="tech-card glass card-1">
+                    <div class="tech-card glass card-1" data-modal="infrastructure">
                         <div class="tech-card-icon">☁️</div>
                         <div class="tech-card-label">Infrastructure</div>
                     </div>
-                    <div class="tech-card glass card-2">
+                    <div class="tech-card glass card-2" data-modal="security">
                         <div class="tech-card-icon">🔒</div>
                         <div class="tech-card-label">Security</div>
                     </div>
-                    <div class="tech-card glass card-3">
-                        <div class="tech-card-icon">🤖</div>
-                        <div class="tech-card-label">AI & ML</div>
-                    </div>
-                    <div class="tech-card glass card-4">
+                    <div class="tech-card glass card-3" data-modal="automation">
                         <div class="tech-card-icon">⚡</div>
                         <div class="tech-card-label">Automation</div>
+                    </div>
+                    <div class="tech-card glass card-4" data-modal="cloud-devops">
+                        <div class="tech-card-icon">🚀</div>
+                        <div class="tech-card-label">Cloud & DevOps</div>
+                    </div>
+                    <div class="tech-card glass card-5" data-modal="monitoring">
+                        <div class="tech-card-icon">📊</div>
+                        <div class="tech-card-label">Monitoring</div>
+                    </div>
+                    <div class="tech-card glass card-6" data-modal="networking">
+                        <div class="tech-card-icon">🌐</div>
+                        <div class="tech-card-label">Networking</div>
+                    </div>
+                    <div class="tech-card glass card-7" data-modal="genai">
+                        <div class="tech-card-icon">🤖</div>
+                        <div class="tech-card-label">GenAI</div>
+                    </div>
+                    <div class="tech-card glass card-8" data-modal="local-ai">
+                        <div class="tech-card-icon">💻</div>
+                        <div class="tech-card-label">Local AI</div>
+                    </div>
+                    <div class="tech-card glass card-9" data-modal="ai-audit">
+                        <div class="tech-card-icon">🔍</div>
+                        <div class="tech-card-label">AI Audit</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Tech Card Modals -->
+    <div id="tech-modal" class="modal">
+        <div class="modal-content glass">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <!-- Infrastructure -->
+                <div class="modal-panel" data-panel="infrastructure">
+                    <h2>☁️ Infrastructure Solutions</h2>
+                    <p class="modal-intro">Building resilient, scalable infrastructure foundations that power your business operations.</p>
+                    <h3>Example Services</h3>
+                    <ul class="modal-services-list">
+                        <li><strong>Cloud Architecture Design:</strong> AWS, Azure, GCP multi-cloud strategies and hybrid deployments</li>
+                        <li><strong>High Availability Systems:</strong> 99.99% uptime SLA with disaster recovery and failover mechanisms</li>
+                        <li><strong>Infrastructure as Code:</strong> Terraform, CloudFormation, Ansible automation</li>
+                        <li><strong>Capacity Planning:</strong> Resource optimization and cost-effective scaling strategies</li>
+                        <li><strong>Migration Services:</strong> Seamless on-premise to cloud migration with zero downtime</li>
+                    </ul>
+                </div>
+
+                <!-- Security -->
+                <div class="modal-panel" data-panel="security">
+                    <h2>🔒 CyberSecurity Services</h2>
+                    <p class="modal-intro">Comprehensive security solutions protecting your digital assets and ensuring compliance.</p>
+                    <h3>Example Services</h3>
+                    <ul class="modal-services-list">
+                        <li><strong>SOC Design & Operations:</strong> 24/7 Security Operations Center setup and management</li>
+                        <li><strong>Penetration Testing:</strong> Ethical hacking and vulnerability assessments</li>
+                        <li><strong>Compliance Audits:</strong> ISO 27001, SOC 2, GDPR, HIPAA compliance consulting</li>
+                        <li><strong>Zero Trust Architecture:</strong> Modern security perimeter implementation</li>
+                        <li><strong>Incident Response:</strong> Rapid threat detection, containment, and remediation</li>
+                        <li><strong>Security Training:</strong> Staff awareness programs and security culture development</li>
+                    </ul>
+                </div>
+
+                <!-- Automation -->
+                <div class="modal-panel" data-panel="automation">
+                    <h2>⚡ Automation & Orchestration</h2>
+                    <p class="modal-intro">Streamline operations and eliminate manual processes with intelligent automation.</p>
+                    <h3>Example Services</h3>
+                    <ul class="modal-services-list">
+                        <li><strong>CI/CD Pipelines:</strong> Jenkins, GitLab CI, GitHub Actions automated deployment workflows</li>
+                        <li><strong>Configuration Management:</strong> Ansible, Puppet, Chef for infrastructure automation</li>
+                        <li><strong>Workflow Automation:</strong> Business process automation and integration</li>
+                        <li><strong>Test Automation:</strong> Automated testing frameworks and quality assurance</li>
+                        <li><strong>Runbook Automation:</strong> Self-healing systems and automated incident response</li>
+                    </ul>
+                </div>
+
+                <!-- Cloud & DevOps -->
+                <div class="modal-panel" data-panel="cloud-devops">
+                    <h2>🚀 Cloud & DevOps Excellence</h2>
+                    <p class="modal-intro">Modern cloud-native development practices accelerating delivery and innovation.</p>
+                    <h3>Example Services</h3>
+                    <ul class="modal-services-list">
+                        <li><strong>Kubernetes Orchestration:</strong> EKS, AKS, GKE container management at scale</li>
+                        <li><strong>Microservices Architecture:</strong> Cloud-native application design and implementation</li>
+                        <li><strong>GitOps Implementation:</strong> ArgoCD, Flux for declarative infrastructure</li>
+                        <li><strong>Serverless Solutions:</strong> AWS Lambda, Azure Functions, Google Cloud Functions</li>
+                        <li><strong>Cost Optimization:</strong> Cloud spend analysis and resource right-sizing</li>
+                        <li><strong>DevOps Culture:</strong> Team transformation and agile methodology adoption</li>
+                    </ul>
+                </div>
+
+                <!-- Monitoring & Observability -->
+                <div class="modal-panel" data-panel="monitoring">
+                    <h2>📊 Monitoring & Observability</h2>
+                    <p class="modal-intro">Complete visibility into system performance with proactive monitoring and alerting.</p>
+                    <h3>Example Services</h3>
+                    <ul class="modal-services-list">
+                        <li><strong>NOC Setup:</strong> Network Operations Center design and 24/7 monitoring</li>
+                        <li><strong>APM Solutions:</strong> Datadog, New Relic, Dynatrace application performance monitoring</li>
+                        <li><strong>Log Management:</strong> ELK Stack, Splunk for centralized logging and analysis</li>
+                        <li><strong>Metrics & Dashboards:</strong> Grafana, Prometheus custom visualization and alerting</li>
+                        <li><strong>Distributed Tracing:</strong> Jaeger, Zipkin for microservices debugging</li>
+                        <li><strong>SLA Monitoring:</strong> Uptime tracking and performance SLA reporting</li>
+                    </ul>
+                </div>
+
+                <!-- Networking & Edge -->
+                <div class="modal-panel" data-panel="networking">
+                    <h2>🌐 Networking & Edge Computing</h2>
+                    <p class="modal-intro">Advanced network architecture and edge computing solutions for distributed systems.</p>
+                    <h3>Example Services</h3>
+                    <ul class="modal-services-list">
+                        <li><strong>Network Architecture:</strong> SD-WAN, VPC design, and network segmentation</li>
+                        <li><strong>Load Balancing:</strong> AWS ALB/NLB, NGINX, HAProxy traffic distribution</li>
+                        <li><strong>CDN Implementation:</strong> CloudFront, Cloudflare, Akamai content delivery</li>
+                        <li><strong>Edge Computing:</strong> AWS Wavelength, Azure Edge Zones deployment</li>
+                        <li><strong>VPN & Connectivity:</strong> Site-to-site VPN, Direct Connect, ExpressRoute</li>
+                        <li><strong>DNS & Traffic Management:</strong> Route 53, Traffic Manager intelligent routing</li>
+                    </ul>
+                </div>
+
+                <!-- GenAI -->
+                <div class="modal-panel" data-panel="genai">
+                    <h2>🤖 Generative AI Solutions</h2>
+                    <p class="modal-intro">Cutting-edge generative AI implementations transforming business workflows.</p>
+                    <h3>Example Services</h3>
+                    <ul class="modal-services-list">
+                        <li><strong>LLM Integration:</strong> GPT-4, Claude, Gemini API integration and fine-tuning</li>
+                        <li><strong>RAG Systems:</strong> Retrieval-Augmented Generation for knowledge bases</li>
+                        <li><strong>AI Assistants:</strong> Custom chatbots and intelligent virtual assistants</li>
+                        <li><strong>Content Generation:</strong> Automated document, code, and creative content creation</li>
+                        <li><strong>Prompt Engineering:</strong> Optimized prompt design and chain-of-thought workflows</li>
+                        <li><strong>AI Workflow Automation:</strong> End-to-end business process AI augmentation</li>
+                    </ul>
+                </div>
+
+                <!-- Local AI -->
+                <div class="modal-panel" data-panel="local-ai">
+                    <h2>💻 Local & On-Premise AI</h2>
+                    <p class="modal-intro">Privacy-first AI deployments running entirely on your infrastructure.</p>
+                    <h3>Example Services</h3>
+                    <ul class="modal-services-list">
+                        <li><strong>On-Premise LLM:</strong> Llama, Mistral, Phi deployment on local hardware</li>
+                        <li><strong>Edge AI:</strong> NVIDIA Jetson, Intel NUC edge device AI processing</li>
+                        <li><strong>Private GPT:</strong> Secure, air-gapped AI systems for sensitive data</li>
+                        <li><strong>Model Optimization:</strong> Quantization, pruning for hardware efficiency</li>
+                        <li><strong>GPU Infrastructure:</strong> NVIDIA A100, H100 cluster setup and management</li>
+                        <li><strong>Inference Servers:</strong> vLLM, TensorRT, ONNX Runtime optimization</li>
+                    </ul>
+                </div>
+
+                <!-- AI Audit -->
+                <div class="modal-panel" data-panel="ai-audit">
+                    <h2>🔍 AI Interpretability & Audit</h2>
+                    <p class="modal-intro">Ensure transparency, fairness, and compliance in your AI systems.</p>
+                    <h3>Example Services</h3>
+                    <ul class="modal-services-list">
+                        <li><strong>Model Explainability:</strong> SHAP, LIME analysis for AI decision transparency</li>
+                        <li><strong>Bias Detection:</strong> Fairness audits and bias mitigation strategies</li>
+                        <li><strong>AI Ethics Review:</strong> Responsible AI frameworks and ethical guidelines</li>
+                        <li><strong>Regulatory Compliance:</strong> EU AI Act, GDPR AI compliance consulting</li>
+                        <li><strong>Model Monitoring:</strong> Drift detection, performance degradation tracking</li>
+                        <li><strong>Documentation:</strong> Model cards, data sheets, and AI system documentation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Services Section -->
     <section id="services" class="services">

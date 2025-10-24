@@ -147,6 +147,57 @@ techCards.forEach(card => {
     });
 });
 
+// Modal functionality for tech cards
+const modal = document.getElementById('tech-modal');
+const modalClose = document.querySelector('.modal-close');
+const modalPanels = document.querySelectorAll('.modal-panel');
+
+// Open modal when clicking tech cards
+techCards.forEach(card => {
+    card.addEventListener('click', () => {
+        const modalId = card.getAttribute('data-modal');
+
+        // Hide all panels
+        modalPanels.forEach(panel => {
+            panel.classList.remove('active');
+        });
+
+        // Show the selected panel
+        const selectedPanel = document.querySelector(`.modal-panel[data-panel="${modalId}"]`);
+        if (selectedPanel) {
+            selectedPanel.classList.add('active');
+        }
+
+        // Show modal
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+});
+
+// Close modal when clicking close button
+if (modalClose) {
+    modalClose.addEventListener('click', () => {
+        modal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    });
+}
+
+// Close modal when clicking outside content
+modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+        modal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+});
+
 // Observe stats for counter animation (only for numeric values)
 const statsObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {

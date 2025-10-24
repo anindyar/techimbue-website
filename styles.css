@@ -342,29 +342,47 @@ body {
 /* Tech Cards Container */
 .tech-cards-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    max-width: 400px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+    max-width: 550px;
     margin: 0 auto;
 }
 
 .tech-card {
-    padding: 2rem 1.5rem;
+    padding: 1.5rem 1rem;
     border-radius: 16px;
     text-align: center;
     transition: all 0.4s ease;
     cursor: pointer;
     border: 2px solid transparent;
+    position: relative;
+}
+
+.tech-card::after {
+    content: 'Click for details';
+    position: absolute;
+    bottom: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.65rem;
+    color: rgba(255, 255, 255, 0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tech-card:hover::after {
+    opacity: 1;
 }
 
 .tech-card-icon {
-    font-size: 3rem;
-    margin-bottom: 0.75rem;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
     filter: drop-shadow(0 0 10px rgba(0, 168, 232, 0.5));
+    transition: all 0.3s ease;
 }
 
 .tech-card-label {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     font-weight: 600;
     color: rgba(255, 255, 255, 0.9);
     letter-spacing: 0.5px;
@@ -396,6 +414,26 @@ body {
 
 .card-4 {
     animation: floatCard4 5.5s infinite ease-in-out;
+}
+
+.card-5 {
+    animation: floatCard5 4.2s infinite ease-in-out;
+}
+
+.card-6 {
+    animation: floatCard6 5.3s infinite ease-in-out;
+}
+
+.card-7 {
+    animation: floatCard7 4.7s infinite ease-in-out;
+}
+
+.card-8 {
+    animation: floatCard8 5.1s infinite ease-in-out;
+}
+
+.card-9 {
+    animation: floatCard9 4.8s infinite ease-in-out;
 }
 
 @keyframes floatCard1 {
@@ -434,6 +472,51 @@ body {
     }
 }
 
+@keyframes floatCard5 {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-11px);
+    }
+}
+
+@keyframes floatCard6 {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-13px);
+    }
+}
+
+@keyframes floatCard7 {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-16px);
+    }
+}
+
+@keyframes floatCard8 {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+@keyframes floatCard9 {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
 @keyframes floatCard {
     0%, 100% {
         transform: translateY(0) rotate(0deg);
@@ -452,6 +535,151 @@ body {
 /* Glitch Effect */
 .glitch {
     position: relative;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 25, 41, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 10000;
+    overflow-y: auto;
+    animation: fadeIn 0.3s ease;
+}
+
+.modal.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.modal-content {
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 20px;
+    padding: 3rem;
+    animation: slideUp 0.4s ease;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 2rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    line-height: 1;
+    padding: 0;
+}
+
+.modal-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: var(--primary);
+    transform: rotate(90deg);
+}
+
+.modal-body {
+    position: relative;
+}
+
+.modal-panel {
+    display: none;
+}
+
+.modal-panel.active {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-panel h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #ffffff, var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.modal-intro {
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 2rem;
+    line-height: 1.7;
+}
+
+.modal-panel h3 {
+    font-size: 1.5rem;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid rgba(0, 168, 232, 0.3);
+    padding-bottom: 0.5rem;
+}
+
+.modal-services-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.modal-services-list li {
+    color: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    background: rgba(0, 168, 232, 0.05);
+    border-left: 3px solid var(--primary);
+    border-radius: 8px;
+    line-height: 1.7;
+    transition: all 0.3s ease;
+}
+
+.modal-services-list li:hover {
+    background: rgba(0, 168, 232, 0.1);
+    transform: translateX(5px);
+}
+
+.modal-services-list li strong {
+    color: var(--accent);
+    display: block;
+    margin-bottom: 0.25rem;
 }
 
 /* Services Section */
@@ -1212,20 +1440,30 @@ body {
     }
 
     .tech-cards-container {
-        max-width: 320px;
-        gap: 1rem;
+        max-width: 450px;
+        gap: 0.8rem;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .tech-card {
-        padding: 1.5rem 1rem;
+        padding: 1.2rem 0.8rem;
     }
 
     .tech-card-icon {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .tech-card-label {
-        font-size: 0.85rem;
+        font-size: 0.75rem;
+    }
+
+    .modal-content {
+        padding: 2rem;
+        max-height: 85vh;
+    }
+
+    .modal-panel h2 {
+        font-size: 2rem;
     }
 
     .book-content {
@@ -1272,21 +1510,53 @@ body {
     }
 
     .tech-cards-container {
-        max-width: 280px;
-        gap: 0.75rem;
+        max-width: 350px;
+        gap: 0.6rem;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .tech-card {
-        padding: 1.25rem 0.75rem;
+        padding: 1rem 0.5rem;
     }
 
     .tech-card-icon {
-        font-size: 2rem;
-        margin-bottom: 0.5rem;
+        font-size: 1.75rem;
+        margin-bottom: 0.4rem;
     }
 
     .tech-card-label {
-        font-size: 0.75rem;
+        font-size: 0.7rem;
+    }
+
+    .tech-card::after {
+        font-size: 0.55rem;
+        bottom: 0.3rem;
+    }
+
+    .modal-content {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+
+    .modal-panel h2 {
+        font-size: 1.75rem;
+    }
+
+    .modal-intro {
+        font-size: 1rem;
+    }
+
+    .modal-services-list li {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+
+    .modal-close {
+        top: 1rem;
+        right: 1rem;
+        width: 35px;
+        height: 35px;
+        font-size: 1.5rem;
     }
 
     .hero::before {

@@ -97,9 +97,12 @@ if (mobileMenuToggle) {
     // Close mobile menu when clicking on a link
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', () => {
-            navLinks.classList.remove('active');
-            mobileMenuToggle.classList.remove('active');
-            navLinks.style.display = 'none';
+            // Only hide menu if it's in mobile mode (has active class)
+            if (navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+                mobileMenuToggle.classList.remove('active');
+                navLinks.style.display = 'none';
+            }
         });
     });
 }

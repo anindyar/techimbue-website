@@ -318,12 +318,12 @@ body {
 .btn-primary {
     background: linear-gradient(135deg, var(--primary), var(--accent));
     color: white;
-    box-shadow: 0 4px 15px rgba(6, 182, 212, 0.4);
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(6, 182, 212, 0.6);
+    box-shadow: 0 6px 20px rgba(255, 107, 53, 0.6);
 }
 
 .btn-secondary {

@@ -1,0 +1,343 @@
+[
+  {
+    "id": "building-techimbue-with-claude-code",
+    "title": "Static Website Magic: Building TechImbue.com with Claude Code, GitHub, and Cloudflare Pages",
+    "slug": "building-techimbue-with-claude-code",
+    "date": "2025-10-24",
+    "author": "Anindya Roy",
+    "excerpt": "How I built a professional business website in hours (not weeks) using AI-powered development, version control, and free hosting. Zero cost, zero build tools, maximum impact.",
+    "tags": ["ClaudeCode", "Anthropic", "CloudflarePages", "GitHub", "WebDevelopment", "AI", "StaticSite", "NoCode"],
+    "linkedinUrl": "https://www.linkedin.com/posts/ranindya_anthropic-claude-code-github-cloudflare-activity-7387534229800316928-eNwL",
+    "videoUrl": "https://www.linkedin.com/posts/ranindya_anthropic-claude-code-github-cloudflare-activity-7387534229800316928-eNwL",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Building a professional business website typically takes weeks of development, design iterations, and deployment configurations. What if I told you it could be done in <strong>hours</strong> — with zero hosting costs, zero build tools, and AI handling the entire development workflow?"
+      },
+      {
+        "type": "paragraph",
+        "text": "That's exactly how <a href='https://techimbue.com' target='_blank'>TechImbue.com</a> came to life. The secret? A powerful combination of three technologies: <strong>Anthropic's Claude Code</strong>, <strong>GitHub</strong>, and <strong>Cloudflare Pages</strong>. Static website magic, indeed."
+      },
+      {
+        "type": "heading",
+        "text": "The Stack: Three Tools, Zero Cost"
+      },
+      {
+        "type": "paragraph",
+        "text": "Let me break down this incredibly efficient development stack:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "<strong>Claude Code (Anthropic):</strong> AI-powered development assistant that writes HTML, CSS, JavaScript, handles git operations, and manages the entire development workflow through natural language",
+          "<strong>GitHub:</strong> Version control and repository hosting (free for public repos)",
+          "<strong>Cloudflare Pages:</strong> Lightning-fast global CDN hosting with automatic deployments (free tier is generous)"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Total monthly cost? <strong>$0</strong>. Total build tools required? <strong>Zero</strong>. Time to deploy? <strong>Minutes</strong>."
+      },
+      {
+        "type": "heading",
+        "text": "How Claude Code Transformed the Workflow"
+      },
+      {
+        "type": "paragraph",
+        "text": "Traditional web development involves juggling multiple tools, writing boilerplate code, debugging CSS, configuring build systems, and wrestling with deployment pipelines. Claude Code eliminated <em>all of that</em>."
+      },
+      {
+        "type": "paragraph",
+        "text": "Here's what Claude Code handled autonomously:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "<strong>Design & Development:</strong> Created a modern glassmorphism design with dark monochrome theme and gold accents — matching TechImbue's brand identity perfectly",
+          "<strong>Responsive Layout:</strong> Built mobile-first responsive design with proper breakpoints for tablet and desktop",
+          "<strong>Interactive Features:</strong> Implemented smooth scrolling, intersection observers for scroll animations, modal systems, mobile menu, and parallax effects",
+          "<strong>SEO Optimization:</strong> Added comprehensive meta tags, Open Graph data, Twitter cards, and Schema.org structured data",
+          "<strong>Git Management:</strong> Initialized repository, created commits with proper messages, and pushed to GitHub",
+          "<strong>Blog System:</strong> Built a JSON-based blog with dynamic rendering (no build tools!)",
+          "<strong>Content Integration:</strong> Structured all service offerings, client showcases, founder bio, and book promotion sections"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "The Pure Static Approach"
+      },
+      {
+        "type": "paragraph",
+        "text": "One of the best decisions was keeping everything pure static — no React, no Vue, no build pipeline, no webpack, no npm hell. Just clean HTML5, CSS3, and vanilla JavaScript (ES6+)."
+      },
+      {
+        "type": "paragraph",
+        "text": "Why? Because simplicity scales better than complexity:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "<strong>Performance:</strong> No framework overhead = blazing fast load times",
+          "<strong>Reliability:</strong> No dependencies to break or become outdated",
+          "<strong>Maintainability:</strong> Any developer can read and modify the code",
+          "<strong>SEO:</strong> Real HTML, real content, search engines love it",
+          "<strong>Hosting:</strong> Deploy anywhere, no special requirements"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "The blog system? It's JSON-based. Posts are stored in <code>posts.json</code>, and JavaScript dynamically renders them. Want to add a new post? Edit the JSON, commit, push. Done. No markdown processors, no static site generators, no build step."
+      },
+      {
+        "type": "heading",
+        "text": "Cloudflare Pages: The Deployment Dream"
+      },
+      {
+        "type": "paragraph",
+        "text": "Cloudflare Pages might be the most underrated developer tool out there. Here's what you get on the <strong>free tier</strong>:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Global CDN with edge caching (your site loads fast everywhere)",
+          "Automatic deployments from GitHub (push = deploy)",
+          "Unlimited bandwidth (seriously)",
+          "Free SSL certificates (automatic HTTPS)",
+          "Custom domains (no extra cost)",
+          "Atomic deployments (instant rollback if needed)",
+          "Preview deployments for branches"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Setup time? Connect GitHub repository, click deploy, done. No configuration files, no build commands (we're pure static), no environment variables to manage."
+      },
+      {
+        "type": "video",
+        "url": "https://www.linkedin.com/posts/ranindya_anthropic-claude-code-github-cloudflare-activity-7387534229800316928-eNwL",
+        "caption": "Watch the full workflow demonstration: Claude Code + GitHub + Cloudflare Pages in action (3:05)"
+      },
+      {
+        "type": "heading",
+        "text": "The Development Experience"
+      },
+      {
+        "type": "paragraph",
+        "text": "Working with Claude Code felt less like traditional programming and more like collaborating with an expert developer who <em>gets it</em>. I described what I wanted in plain English:"
+      },
+      {
+        "type": "quote",
+        "text": "Create a modern website for TechImbue showcasing infrastructure consultancy, cybersecurity, and AI services. Dark theme with gold accents. Glassmorphism effects. Make it look premium and tech-forward."
+      },
+      {
+        "type": "paragraph",
+        "text": "Claude Code understood the requirements, made design decisions, implemented best practices, and delivered production-ready code. When I wanted changes, I just asked:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "\"Add a blog section with JSON-based posts\"",
+          "\"Make the hero section more interactive with tech cards\"",
+          "\"Add my book promotion with a standout design\"",
+          "\"Fix the mobile menu bug where it disappears after multiple clicks\""
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Every request was handled correctly, with proper error handling, accessibility considerations, and performance optimization. The AI even wrote proper git commit messages explaining what changed and why."
+      },
+      {
+        "type": "heading",
+        "text": "What This Means for Businesses"
+      },
+      {
+        "type": "paragraph",
+        "text": "This workflow has profound implications for businesses, especially tech consultancies and startups:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "<strong>Speed to Market:</strong> Launch professional websites in hours, not weeks",
+          "<strong>Zero Operating Costs:</strong> Free hosting, free SSL, free CDN, unlimited bandwidth",
+          "<strong>AI-Powered Iteration:</strong> Want to change something? Just ask. No hourly rates, no agency fees",
+          "<strong>Full Control:</strong> You own the code, the repo, the deployment. No vendor lock-in",
+          "<strong>Easy Maintenance:</strong> Add blog posts by editing JSON. Update content with simple HTML changes",
+          "<strong>Professional Results:</strong> Modern design, proper SEO, fast performance, mobile-responsive"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "For a technology consultancy like TechImbue, this demonstrates exactly what we preach: <strong>practical innovation that delivers real business value</strong>."
+      },
+      {
+        "type": "heading",
+        "text": "The Technical Details"
+      },
+      {
+        "type": "paragraph",
+        "text": "For those interested in the technical architecture:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "<strong>Tech Stack:</strong> HTML5, CSS3, Vanilla JavaScript (ES6+)",
+          "<strong>Design System:</strong> CSS custom properties for theming, glassmorphism effects with backdrop-filter",
+          "<strong>Animations:</strong> Intersection Observer API for scroll-triggered animations, CSS transforms for performance",
+          "<strong>Blog System:</strong> JSON data store + JavaScript renderer, no build tools",
+          "<strong>SEO:</strong> Complete meta tags, Schema.org structured data, semantic HTML",
+          "<strong>Hosting:</strong> Cloudflare Pages with edge caching and automatic deployments",
+          "<strong>Version Control:</strong> GitHub repository with atomic commits"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "The entire codebase is clean, commented, and follows modern web standards. No hacks, no workarounds, no technical debt."
+      },
+      {
+        "type": "heading",
+        "text": "Lessons Learned"
+      },
+      {
+        "type": "paragraph",
+        "text": "After deploying TechImbue.com this way, here are my key takeaways:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "<strong>AI-powered development is ready for production:</strong> Claude Code produces quality code that follows best practices",
+          "<strong>Simplicity beats complexity:</strong> Pure static sites are faster, more reliable, and easier to maintain than framework-heavy SPAs",
+          "<strong>Free doesn't mean limited:</strong> Cloudflare Pages' free tier is production-grade",
+          "<strong>Iteration speed matters:</strong> Being able to ask for changes in natural language accelerates development massively",
+          "<strong>Documentation is critical:</strong> I created CLAUDE.md to help future AI instances work on the codebase efficiently"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Try It Yourself"
+      },
+      {
+        "type": "paragraph",
+        "text": "Want to build your own site this way? Here's the workflow:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Get access to Claude Code (claude.ai/code)",
+          "Create a GitHub repository",
+          "Describe your website to Claude Code in natural language",
+          "Let it build, test, and commit the code",
+          "Connect your GitHub repo to Cloudflare Pages",
+          "Deploy (automatic from every push)"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "That's it. No webpack configs, no package.json, no build scripts, no deployment YAML files. Just clean code and smart automation."
+      },
+      {
+        "type": "heading",
+        "text": "The Future of Web Development"
+      },
+      {
+        "type": "paragraph",
+        "text": "This approach represents where web development is heading: <strong>AI handles the implementation details while humans focus on vision, strategy, and content</strong>."
+      },
+      {
+        "type": "paragraph",
+        "text": "Instead of spending days wrestling with CSS grid bugs or configuring webpack loaders, I spent my time on what matters: defining TechImbue's message, structuring our service offerings, and creating compelling content."
+      },
+      {
+        "type": "paragraph",
+        "text": "The technical execution? Claude Code handled it flawlessly."
+      },
+      {
+        "type": "paragraph",
+        "text": "<em>This is just the beginning. At TechImbue, we're exploring how AI-powered development workflows can transform not just websites, but entire infrastructure deployments, automation pipelines, and business operations. Want to bring this approach to your organization? <a href='https://techimbue.com#contact'>Let's talk</a>.</em>"
+      }
+    ]
+  },
+  {
+    "id": "distributed-ai-amd-strix-halo",
+    "title": "Running 70B Models Across Two AMD Strix Halo Boxes: Early Results from Distributed AI Research",
+    "slug": "distributed-ai-amd-strix-halo",
+    "date": "2025-11-02",
+    "author": "Anindya Roy",
+    "excerpt": "Two days of effort — very early results, but I'm genuinely excited about the possibilities. Successfully running a 70B parameter dense model across two AMD Strix Halo boxes connected via USB4/Thunderbolt 4.",
+    "tags": ["LLM", "AMD", "ROCm", "StrixHalo", "DistributedAI", "llamacpp", "EdgeInference"],
+    "linkedinUrl": "https://www.linkedin.com/posts/ranindya_gmktec-llm-amd-activity-7390560217777905665-NuIm",
+    "videoUrl": "https://www.linkedin.com/posts/ranindya_gmktec-llm-amd-activity-7390560217777905665-NuIm",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Two days of effort — very early results, but I'm genuinely excited about the possibilities."
+      },
+      {
+        "type": "paragraph",
+        "text": "I've successfully run a 70B parameter dense model across two AMD Strix Halo boxes (96GB VRAM each) connected via USB4/Thunderbolt 4 using P2P (peer-to-peer) connection. This is cutting-edge distributed AI inference at the edge."
+      },
+      {
+        "type": "heading",
+        "text": "What's Working"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Dense transformer models running stably across the distributed setup",
+          "USB4/Thunderbolt 4 P2P connection providing sufficient bandwidth",
+          "96GB VRAM per box enabling large model handling",
+          "Successful load balancing across both AMD GPUs"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Current Challenges"
+      },
+      {
+        "type": "list",
+        "items": [
+          "MoE (Mixture of Experts) architectures failing at load time",
+          "Further optimization needed for multi-box coordination",
+          "Testing required for various model architectures"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "What's Next"
+      },
+      {
+        "type": "paragraph",
+        "text": "A research paper documenting these findings is forthcoming. The next phase of this research involves daisy-chaining four Strix Halo units together, which would enable running full-size DeepSeek and Llama models at the edge without cloud dependencies."
+      },
+      {
+        "type": "paragraph",
+        "text": "This work has significant implications for:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "<strong>Privacy-first AI:</strong> Running large models entirely on-premise",
+          "<strong>Edge Computing:</strong> Bringing frontier model capabilities to local infrastructure",
+          "<strong>Cost Efficiency:</strong> Eliminating cloud API costs for production AI workloads",
+          "<strong>Latency Reduction:</strong> Local inference for real-time applications"
+        ]
+      },
+      {
+        "type": "video",
+        "url": "https://www.linkedin.com/posts/ranindya_gmktec-llm-amd-activity-7390560217777905665-NuIm",
+        "caption": "Watch the demonstration of distributed inference running across two AMD Strix Halo boxes (2:48)"
+      },
+      {
+        "type": "heading",
+        "text": "Looking for Support"
+      },
+      {
+        "type": "paragraph",
+        "text": "I'm seeking sponsorship from AMD, GMKTec, or Framework to continue this research. If you're interested in supporting cutting-edge distributed AI research or want to collaborate, please reach out."
+      },
+      {
+        "type": "paragraph",
+        "text": "<em>This research aligns with TechImbue's mission of delivering privacy-first, on-premise AI solutions that give organizations complete control over their data and infrastructure.</em>"
+      }
+    ]
+  }
+]

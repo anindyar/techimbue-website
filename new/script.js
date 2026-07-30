@@ -91,7 +91,7 @@ if (mobileMenuToggle) {
             navLinks.style.padding = '2rem';
             navLinks.style.backdropFilter = 'blur(20px)';
             navLinks.style.borderRadius = '0 0 20px 20px';
-            navLinks.style.borderTop = '1px solid #3A3A3A';
+            navLinks.style.borderTop = '1px solid #1E2D45';
             navLinks.style.boxShadow = '0 4px 16px rgba(0, 0, 0, 0.5)';
         } else {
             navLinks.style.display = 'none';
@@ -271,8 +271,8 @@ window.addEventListener('scroll', () => {
                 a.style.background = '';
                 a.style.color = '';
             });
-            link.style.background = '#2D2D2D';
-            link.style.color = '#D4AF37';
+            link.style.background = '#142138';
+            link.style.color = '#22D3EE';
         }
     });
 });

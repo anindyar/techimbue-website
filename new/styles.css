@@ -6,39 +6,39 @@
 }
 
 :root {
-    /* Dark Monochrome Palette - Ash & Charcoal */
-    --jet-black: #0A0A0A;
-    --ash-black: #1A1A1A;
-    --deep-charcoal: #252525;
-    --charcoal: #2D2D2D;
-    --ash-gray: #3A3A3A;
-    --slate-gray: #4A4A4A;
-    --smoke-gray: #6B6B6B;
-    --light-smoke: #8B8B8B;
-    --whisper-gray: #B0B0B0;
+    /* "Deep Signal" Palette — deep blue-black, blueprint slate */
+    --jet-black: #060B14;
+    --ash-black: #0A1220;
+    --deep-charcoal: #0F1A2E;
+    --charcoal: #142138;
+    --ash-gray: #1E2D45;
+    --slate-gray: #2A3B58;
+    --smoke-gray: #5A6B85;
+    --light-smoke: #7E90AB;
+    --whisper-gray: #A8B6CC;
     --pure-white: #FFFFFF;
 
-    /* Gold Accent - Luxury & Timeless */
-    --primary: #D4AF37;
-    --primary-light: #F4D03F;
-    --primary-dark: #B8941E;
-    --accent: #C9A961;
-    --accent-glow: rgba(212, 175, 55, 0.3);
+    /* Electric Cyan Accent — signal & precision */
+    --primary: #22D3EE;
+    --primary-light: #67E8F9;
+    --primary-dark: #0E9BB5;
+    --accent: #38BDF8;
+    --accent-glow: rgba(34, 211, 238, 0.3);
 
     /* Functional Colors for Dark Theme */
     --text-primary: #FFFFFF;
-    --text-secondary: #E0E0E0;
-    --text-muted: #B0B0B0;
-    --border-light: #3A3A3A;
-    --border-medium: #4A4A4A;
-    --border-dark: #2D2D2D;
+    --text-secondary: #D6E0EE;
+    --text-muted: #A8B6CC;
+    --border-light: #1E2D45;
+    --border-medium: #2A3B58;
+    --border-dark: #142138;
 
     /* Effects for Dark Theme */
-    --shadow-subtle: 0 2px 8px rgba(0, 0, 0, 0.4);
-    --shadow-medium: 0 4px 16px rgba(0, 0, 0, 0.5);
-    --shadow-strong: 0 8px 32px rgba(0, 0, 0, 0.6);
-    --shadow-accent: 0 8px 32px rgba(212, 175, 55, 0.2);
-    --glass-bg: rgba(26, 26, 26, 0.8);
+    --shadow-subtle: 0 2px 8px rgba(0, 0, 0, 0.5);
+    --shadow-medium: 0 4px 16px rgba(0, 0, 0, 0.6);
+    --shadow-strong: 0 8px 32px rgba(0, 0, 0, 0.7);
+    --shadow-accent: 0 8px 32px rgba(34, 211, 238, 0.22);
+    --glass-bg: rgba(12, 20, 34, 0.72);
 
     /* Typography — Space Grotesk for display, Inter for body */
     --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -76,7 +76,10 @@ h1, h2, h3, h4, h5, h6,
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: linear-gradient(180deg, var(--jet-black) 0%, var(--ash-black) 50%, var(--deep-charcoal) 100%);
+    background:
+        radial-gradient(1000px 700px at 15% -10%, rgba(34, 211, 238, 0.10), transparent 60%),
+        radial-gradient(900px 650px at 90% 10%, rgba(56, 189, 248, 0.08), transparent 60%),
+        linear-gradient(180deg, var(--jet-black) 0%, var(--ash-black) 55%, var(--deep-charcoal) 100%);
     overflow: hidden;
 }
 
@@ -223,8 +226,8 @@ h1, h2, h3, h4, h5, h6,
     right: 0;
     bottom: 0;
     background-image:
-        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+        linear-gradient(rgba(34, 211, 238, 0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(34, 211, 238, 0.06) 1px, transparent 1px);
     background-size: 50px 50px;
     animation: gridMove 20s linear infinite;
     pointer-events: none;
@@ -247,7 +250,7 @@ h1, h2, h3, h4, h5, h6,
     left: 50%;
     width: 800px;
     height: 800px;
-    background: radial-gradient(circle, rgba(201, 169, 97, 0.06), rgba(212, 175, 55, 0.03) 50%, transparent 70%);
+    background: radial-gradient(circle, rgba(34, 211, 238, 0.10), rgba(56, 189, 248, 0.05) 50%, transparent 70%);
     transform: translate(-50%, -50%);
     animation: pulseGlow 6s infinite ease-in-out;
     pointer-events: none;
@@ -289,7 +292,7 @@ h1, h2, h3, h4, h5, h6,
     letter-spacing: -0.03em;
 }
 
-/* Refined hero wordmark — restrained gold gradient instead of the glitch effect */
+/* Hero wordmark — white-to-cyan signal reveal instead of the glitch effect */
 .hero-title {
     background: linear-gradient(120deg, var(--pure-white) 0%, var(--pure-white) 55%, var(--primary) 100%);
     -webkit-background-clip: text;
@@ -357,7 +360,7 @@ h1, h2, h3, h4, h5, h6,
     transform: translateY(-2px);
     background: var(--primary-light);
     border-color: var(--primary-light);
-    box-shadow: 0 8px 32px rgba(212, 175, 55, 0.4);
+    box-shadow: 0 8px 32px rgba(34, 211, 238, 0.4);
 }
 
 .btn-secondary {
@@ -410,7 +413,7 @@ h1, h2, h3, h4, h5, h6,
 .btn-book:hover {
     background: linear-gradient(135deg, var(--primary-light), var(--accent), var(--primary-light));
     transform: translateY(-2px) scale(1.02);
-    box-shadow: 0 8px 32px rgba(201, 169, 97, 0.35);
+    box-shadow: 0 8px 32px rgba(34, 211, 238, 0.35);
 }
 
 .btn-book svg {
@@ -457,7 +460,7 @@ h1, h2, h3, h4, h5, h6,
 .btn-book-hero:hover {
     background: linear-gradient(135deg, var(--primary-light), var(--accent), var(--primary-light));
     transform: translateY(-3px) scale(1.03);
-    box-shadow: 0 12px 40px rgba(201, 169, 97, 0.4);
+    box-shadow: 0 12px 40px rgba(34, 211, 238, 0.4);
 }
 
 .btn-book-hero svg {
@@ -518,7 +521,7 @@ h1, h2, h3, h4, h5, h6,
 .tech-card-icon {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
-    filter: drop-shadow(0 0 8px rgba(201, 169, 97, 0.2));
+    filter: drop-shadow(0 0 8px rgba(34, 211, 238, 0.2));
     transition: all 0.3s ease;
 }
 
@@ -536,7 +539,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .tech-card:hover .tech-card-icon {
-    filter: drop-shadow(0 0 15px rgba(201, 169, 97, 0.5));
+    filter: drop-shadow(0 0 15px rgba(34, 211, 238, 0.5));
     transform: scale(1.1);
 }
 

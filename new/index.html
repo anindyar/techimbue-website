@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>TechImbue | Advanced Technology Solutions - Infrastructure, AI & Cybersecurity</title>
+    <meta name="title" content="TechImbue | Advanced Technology Solutions - Infrastructure, AI & Cybersecurity">
+    <meta name="description" content="TechImbue provides cutting-edge infrastructure consultancy, cybersecurity, custom AI workflows, local AI solutions, and AI interpretability services. Tech-to-Tech excellence for enterprise clients.">
+    <meta name="keywords" content="infrastructure consultancy, cybersecurity, AI solutions, generative AI, local AI, AI interpretability, cloud architecture, DevOps, Kubernetes, NOC, SOC, tech consultancy, enterprise technology">
+    <meta name="author" content="Anindya Roy">
+    <!-- Preview build: keep out of the search index so /new isn't treated as a duplicate of the live site -->
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="canonical" href="https://techimbue.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://techimbue.com/">
+    <meta property="og:title" content="TechImbue | Advanced Technology Solutions - Infrastructure, AI & Cybersecurity">
+    <meta property="og:description" content="Empowering enterprises with cutting-edge infrastructure, cybersecurity, and AI solutions. Tech-to-Tech consultancy for mission-critical operations.">
+    <meta property="og:image" content="https://techimbue.com/logo.jpg">
+    <meta property="og:site_name" content="TechImbue">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://techimbue.com/">
+    <meta property="twitter:title" content="TechImbue | Advanced Technology Solutions">
+    <meta property="twitter:description" content="Cutting-edge infrastructure consultancy, cybersecurity, and AI solutions for enterprises.">
+    <meta property="twitter:image" content="https://techimbue.com/logo.jpg">
+
+    <!-- Additional SEO -->
+    <meta name="theme-color" content="#1A1A1A">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="rating" content="general">
+    <meta name="distribution" content="global">
+
+    <!-- Typeface pair: Space Grotesk for display headings, Inter for body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="background">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="#home" class="logo">
+                    <img src="../logo.jpg" alt="TechImbue - Technology. Inspiring.">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#clients">Clients</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="../blog/index.html">Blog</a></li>
+                <li><a href="#book" class="btn-book">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                    </svg>
+                    My Book
+                </a></li>
+                <li><a href="#contact" class="btn-primary">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">TechImbue</h1>
+                <p class="hero-subtitle">Technology. Inspiring.</p>
+                <p class="hero-description">
+                    Empowering enterprises with cutting-edge infrastructure, cybersecurity,
+                    and AI solutions that transform possibilities into reality.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn-primary btn-large">Explore Services</a>
+                    <a href="#contact" class="btn-secondary btn-large">Get in Touch</a>
+                </div>
+                <a href="#book" class="btn-book-hero">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                    </svg>
+                    <span>
+                        <strong>NEW:</strong> Gen AI for Leaders in a Hurry
+                    </span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </a>
+            </div>
+            <div class="hero-visual">
+                <div class="tech-cards-container">
+                    <div class="tech-card glass card-1" data-modal="infrastructure">
+                        <div class="tech-card-icon">☁️</div>
+                        <div class="tech-card-label">Infrastructure</div>
+                    </div>
+                    <div class="tech-card glass card-2" data-modal="security">
+                        <div class="tech-card-icon">🔒</div>
+                        <div class="tech-card-label">Security</div>
+                    </div>
+                    <div class="tech-card glass card-3" data-modal="automation">
+                        <div class="tech-card-icon">⚡</div>
+                        <div class="tech-card-label">Automation</div>
+                    </div>
+                    <div class="tech-card glass card-4" data-modal="cloud-devops">
+                        <div class="tech-card-icon">🚀</div>
+                        <div class="tech-card-label">Cloud & DevOps</div>
+                    </div>
+                    <div class="tech-card glass card-5" data-modal="monitoring">
+                        <div class="tech-card-icon">📊</div>
+                        <div class="tech-card-label">Monitoring</div>
+                    </div>
+                    <div class="tech-card glass card-6" data-modal="networking">
+                        <div class="tech-card-icon">🌐</div>
+                        <div class="tech-card-label">Networking</div>
+                    </div>
+                    <div class="tech-card glass card-7" data-modal="genai">
+                        <div class="tech-card-icon">🤖</div>
+                        <div class="tech-card-label">GenAI</div>
+                    </div>
+                    <div class="tech-card glass card-8" data-modal="local-ai">
+                        <div class="tech-card-icon">💻</div>
+                        <div class="tech-card-label">Local AI</div>
+                    </div>
+                    <div class="tech-card glass card-9" data-modal="ai-audit">
+                        <div class="tech-card-icon">🔍</div>
+                        <div class="tech-card-label">AI Audit</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Card Modals -->
+    <div id="tech-modal" class="modal">
+        <div class="modal-content glass">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <!-- Infrastructure -->
+                <div class="modal-panel" data-panel="infrastructure">
+                    <h2>☁️ Infrastructure Solutions</h2>
+                    <p class="modal-intro">Building resilient, scalable infrastructure foundations that power your business operations.</p>
+                    <h3>Our Services</h3>
+                    <ul class="modal-services-list">
+                        <li><strong>Cloud Architecture Design:</strong> AWS, Azure, GCP multi-cloud strategies and hybrid deployments</li>
+                        <li><strong>High Availability Systems:</strong> 99.99% uptime SLA with disaster recovery and failover mechanisms</li>
+                        <li><strong>Infrastructure as Code:</strong> Terraform, CloudFormation, Ansible automation</li>
+                        <li><strong>Capacity Planning:</strong> Resource optimization and cost-effective scaling strategies</li>
+                        <li><strong>Migration Services:</strong> Seamless on-premise to cloud migration with zero downtime</li>
+                    </ul>
+                </div>
+
+                <!-- Security -->
+                <div class="modal-panel" data-panel="security">
+                    <h2>🔒 CyberSecurity Services</h2>
+                    <p class="modal-intro">Comprehensive security solutions protecting your digital assets and ensuring compliance.</p>
+                    <h3>Our Services</h3>
+                    <ul class="modal-services-list">
+                        <li><strong>SOC Design & Operations:</strong> 24/7 Security Operations Center setup and management</li>
+                        <li><strong>Penetration Testing:</strong> Ethical hacking and vulnerability assessments</li>
+                        <li><strong>Compliance Audits:</strong> ISO 27001, SOC 2, GDPR, HIPAA compliance consulting</li>
+                        <li><strong>Zero Trust Architecture:</strong> Modern security perimeter implementation</li>
+                        <li><strong>Incident Response:</strong> Rapid threat detection, containment, and remediation</li>
+                        <li><strong>Security Training:</strong> Staff awareness programs and security culture development</li>
+                    </ul>
+                </div>
+
+                <!-- Automation -->
+                <div class="modal-panel" data-panel="automation">
+                    <h2>⚡ Automation & Orchestration</h2>
+                    <p class="modal-intro">Streamline operations and eliminate manual processes with intelligent automation.</p>
+                    <h3>Our Services</h3>
+                    <ul class="modal-services-list">
+                        <li><strong>CI/CD Pipelines:</strong> Jenkins, GitLab CI, GitHub Actions automated deployment workflows</li>
+                        <li><strong>Configuration Management:</strong> Ansible, Puppet, Chef for infrastructure automation</li>
+                        <li><strong>Workflow Automation:</strong> Business process automation and integration</li>
+                        <li><strong>Test Automation:</strong> Automated testing frameworks and quality assurance</li>
+                        <li><strong>Runbook Automation:</strong> Self-healing systems and automated incident response</li>
+                    </ul>
+                </div>
+
+                <!-- Cloud & DevOps -->
+                <div class="modal-panel" data-panel="cloud-devops">
+                    <h2>🚀 Cloud & DevOps Excellence</h2>
+                    <p class="modal-intro">Modern cloud-native development practices accelerating delivery and innovation.</p>
+                    <h3>Our Services</h3>
+                    <ul class="modal-services-list">
+                        <li><strong>Kubernetes Orchestration:</strong> EKS, AKS, GKE container management at scale</li>
+                        <li><strong>Microservices Architecture:</strong> Cloud-native application design and implementation</li>
+                        <li><strong>GitOps Implementation:</strong> ArgoCD, Flux for declarative infrastructure</li>
+                        <li><strong>Serverless Solutions:</strong> AWS Lambda, Azure Functions, Google Cloud Functions</li>
+                        <li><strong>Cost Optimization:</strong> Cloud spend analysis and resource right-sizing</li>
+                        <li><strong>DevOps Culture:</strong> Team transformation and agile methodology adoption</li>
+                    </ul>
+                </div>
+
+                <!-- Monitoring & Observability -->
+                <div class="modal-panel" data-panel="monitoring">
+                    <h2>📊 Monitoring & Observability</h2>
+                    <p class="modal-intro">Complete visibility into system performance with proactive monitoring and alerting.</p>
+                    <h3>Our Services</h3>
+                    <ul class="modal-services-list">
+                        <li><strong>NOC Setup:</strong> Network Operations Center design and 24/7 monitoring</li>
+                        <li><strong>APM Solutions:</strong> Datadog, New Relic, Dynatrace application performance monitoring</li>
+                        <li><strong>Log Management:</strong> ELK Stack, Splunk for centralized logging and analysis</li>
+                        <li><strong>Metrics & Dashboards:</strong> Grafana, Prometheus custom visualization and alerting</li>
+                        <li><strong>Distributed Tracing:</strong> Jaeger, Zipkin for microservices debugging</li>
+                        <li><strong>SLA Monitoring:</strong> Uptime tracking and performance SLA reporting</li>
+                    </ul>
+                </div>
+
+                <!-- Networking & Edge -->
+                <div class="modal-panel" data-panel="networking">
+                    <h2>🌐 Networking & Edge Computing</h2>
+                    <p class="modal-intro">Advanced network architecture and edge computing solutions for distributed systems.</p>
+                    <h3>Our Services</h3>
+                    <ul class="modal-services-list">
+                        <li><strong>Network Architecture:</strong> SD-WAN, VPC design, and network segmentation</li>
+                        <li><strong>Load Balancing:</strong> AWS ALB/NLB, NGINX, HAProxy traffic distribution</li>
+                        <li><strong>CDN Implementation:</strong> CloudFront, Cloudflare, Akamai content delivery</li>
+                        <li><strong>Edge Computing:</strong> AWS Wavelength, Azure Edge Zones deployment</li>
+                        <li><strong>VPN & Connectivity:</strong> Site-to-site VPN, Direct Connect, ExpressRoute</li>
+                        <li><strong>DNS & Traffic Management:</strong> Route 53, Traffic Manager intelligent routing</li>
+                    </ul>
+                </div>
+
+                <!-- GenAI -->
+                <div class="modal-panel" data-panel="genai">
+                    <h2>🤖 Generative AI Solutions</h2>
+                    <p class="modal-intro">Cutting-edge generative AI implementations transforming business workflows.</p>
+                    <h3>Our Services</h3>
+                    <ul class="modal-services-list">
+                        <li><strong>LLM Integration:</strong> GPT-4, Claude, Gemini API integration and fine-tuning</li>
+                        <li><strong>RAG Systems:</strong> Retrieval-Augmented Generation for knowledge bases</li>
+                        <li><strong>AI Assistants:</strong> Custom chatbots and intelligent virtual assistants</li>
+                        <li><strong>Content Generation:</strong> Automated document, code, and creative content creation</li>
+                        <li><strong>Prompt Engineering:</strong> Optimized prompt design and chain-of-thought workflows</li>
+                        <li><strong>AI Workflow Automation:</strong> End-to-end business process AI augmentation</li>
+                    </ul>
+                </div>
+
+                <!-- Local AI -->
+                <div class="modal-panel" data-panel="local-ai">
+                    <h2>💻 Local & On-Premise AI</h2>
+                    <p class="modal-intro">Privacy-first AI deployments running entirely on your infrastructure.</p>
+                    <h3>Our Services</h3>
+                    <ul class="modal-services-list">
+                        <li><strong>On-Premise LLM:</strong> Llama, Mistral, Phi deployment on local hardware</li>
+                        <li><strong>Edge AI:</strong> NVIDIA Jetson, Intel NUC edge device AI processing</li>
+                        <li><strong>Private GPT:</strong> Secure, air-gapped AI systems for sensitive data</li>
+                        <li><strong>Model Optimization:</strong> Quantization, pruning for hardware efficiency</li>
+                        <li><strong>GPU Infrastructure:</strong> NVIDIA A100, H100 cluster setup and management</li>
+                        <li><strong>Inference Servers:</strong> vLLM, TensorRT, ONNX Runtime optimization</li>
+                    </ul>
+                </div>
+
+                <!-- AI Audit -->
+                <div class="modal-panel" data-panel="ai-audit">
+                    <h2>🔍 AI Interpretability & Audit</h2>
+                    <p class="modal-intro">Ensure transparency, fairness, and compliance in your AI systems.</p>
+                    <h3>Our Services</h3>
+                    <ul class="modal-services-list">
+                        <li><strong>Model Explainability:</strong> SHAP, LIME analysis for AI decision transparency</li>
+                        <li><strong>Bias Detection:</strong> Fairness audits and bias mitigation strategies</li>
+                        <li><strong>AI Ethics Review:</strong> Responsible AI frameworks and ethical guidelines</li>
+                        <li><strong>Regulatory Compliance:</strong> EU AI Act, GDPR AI compliance consulting</li>
+                        <li><strong>Model Monitoring:</strong> Drift detection, performance degradation tracking</li>
+                        <li><strong>Documentation:</strong> Model cards, data sheets, and AI system documentation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Comprehensive technology solutions tailored to your needs</p>
+
+            <div class="services-grid">
+                <!-- Service 1: Infrastructure Consultancy -->
+                <div class="service-card glass">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                            <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                            <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                            <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                        </svg>
+                    </div>
+                    <h3>Infrastructure Consultancy</h3>
+                    <p>Strategic guidance for building scalable, resilient infrastructure. From cloud architecture to on-premise solutions, we optimize your technology foundation.</p>
+                    <ul class="service-features">
+                        <li>Cloud Architecture Design</li>
+                        <li>System Optimization</li>
+                        <li>Performance Tuning</li>
+                        <li>Disaster Recovery Planning</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2: CyberSecurity -->
+                <div class="service-card glass">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3>CyberSecurity</h3>
+                    <p>Comprehensive security solutions to protect your digital assets. Advanced threat detection, vulnerability assessment, and security architecture design.</p>
+                    <ul class="service-features">
+                        <li>Security Audits & Penetration Testing</li>
+                        <li>Threat Intelligence</li>
+                        <li>Compliance Management</li>
+                        <li>Incident Response</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3: Custom AI Workflows -->
+                <div class="service-card glass featured">
+                    <div class="featured-badge">Popular</div>
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                        </svg>
+                    </div>
+                    <h3>Hyper Custom AI Workflows</h3>
+                    <p>Bespoke AI solutions designed specifically for your business processes. From ideation to deployment, we craft intelligent workflows that deliver results.</p>
+                    <ul class="service-features">
+                        <li>Custom Model Development</li>
+                        <li>Workflow Automation</li>
+                        <li>Integration & Deployment</li>
+                        <li>Continuous Optimization</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4: Local AI -->
+                <div class="service-card glass">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                            <rect x="9" y="9" width="6" height="6"></rect>
+                            <line x1="9" y1="1" x2="9" y2="4"></line>
+                            <line x1="15" y1="1" x2="15" y2="4"></line>
+                            <line x1="9" y1="20" x2="9" y2="23"></line>
+                            <line x1="15" y1="20" x2="15" y2="23"></line>
+                            <line x1="20" y1="9" x2="23" y2="9"></line>
+                            <line x1="20" y1="14" x2="23" y2="14"></line>
+                            <line x1="1" y1="9" x2="4" y2="9"></line>
+                            <line x1="1" y1="14" x2="4" y2="14"></line>
+                        </svg>
+                    </div>
+                    <h3>Local AI Solutions</h3>
+                    <p>Privacy-first AI deployments running entirely on your infrastructure. Maintain complete control over your data while leveraging cutting-edge AI capabilities.</p>
+                    <ul class="service-features">
+                        <li>On-Premise AI Deployment</li>
+                        <li>Privacy-Preserving AI</li>
+                        <li>Edge Computing Solutions</li>
+                        <li>Model Optimization for Local Hardware</li>
+                    </ul>
+                </div>
+
+                <!-- Service 5: AI Interpretability & Audit -->
+                <div class="service-card glass">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <h3>AI Interpretability & Audit</h3>
+                    <p>Ensure transparency and trust in your AI systems. Comprehensive audits, explainability analysis, and compliance verification for responsible AI deployment.</p>
+                    <ul class="service-features">
+                        <li>Model Explainability Analysis</li>
+                        <li>Bias Detection & Mitigation</li>
+                        <li>AI Compliance Audits</li>
+                        <li>Ethical AI Consulting</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients">
+        <div class="container">
+            <h2 class="section-title">Tech 2 Tech Excellence</h2>
+            <p class="section-subtitle">We are a Tech 2 Tech company, partnering with leading technology enterprises to deliver sophisticated architectural and consultancy services</p>
+
+            <div class="clients-intro glass">
+                <p>
+                    Working closely with innovative tech companies, we provide extremely sophisticated
+                    architectural and consultancy services that power mission-critical infrastructure,
+                    security operations, and cutting-edge AI implementations across industries.
+                </p>
+            </div>
+
+            <div class="clients-grid">
+                <!-- Client 1: Inspire Infosol -->
+                <div class="client-card glass">
+                    <div class="client-logo-wrapper">
+                        <img src="../inspire-logo.svg" alt="Inspire Infosol" class="client-logo">
+                    </div>
+                    <h3>Inspire Infosol</h3>
+                    <p class="client-description">
+                        Managing multi-airline cloud infrastructure with precision and reliability.
+                        We help Inspire Infosol deliver seamless cloud operations for multiple airlines,
+                        ensuring high availability and optimal performance.
+                    </p>
+                    <a href="https://www.inspireinfosol.com/" target="_blank" rel="noopener" class="client-link">
+                        Visit Website
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Client 2: Digital Insights -->
+                <div class="client-card glass">
+                    <div class="client-logo-wrapper">
+                        <img src="../digital-insights-logo.webp" alt="Digital Insights UAE" class="client-logo">
+                    </div>
+                    <h3>Digital Insights</h3>
+                    <p class="client-description">
+                        Designing and running high-end Network Operations Centers (NOC) and Security
+                        Operations Centers (SOC) for multiple Middle East government departments,
+                        ensuring national security and operational excellence.
+                    </p>
+                    <a href="https://dicuae.com/" target="_blank" rel="noopener" class="client-link">
+                        Visit Website
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Client 3: Stortech -->
+                <div class="client-card glass">
+                    <div class="client-logo-wrapper">
+                        <img src="../stortech-logo.png" alt="Stortech" class="client-logo">
+                    </div>
+                    <h3>Stortech</h3>
+                    <p class="client-description">
+                        Managing large-scale Kubernetes implementations that power enterprise-grade
+                        containerized applications. We enable Stortech to deliver robust, scalable
+                        orchestration solutions to their clients.
+                    </p>
+                    <a href="https://stortech.ae/" target="_blank" rel="noopener" class="client-link">
+                        Visit Website
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Client 4: Chimes Group -->
+                <div class="client-card glass">
+                    <div class="client-logo-wrapper">
+                        <img src="../chimes-logo.jpg" alt="Chimes Group" class="client-logo">
+                    </div>
+                    <h3>Chimes Group</h3>
+                    <p class="client-description">
+                        Providing Fractional CTO and Fractional CAIO (Chief AI Officer) services,
+                        delivering executive-level technology and AI leadership to drive strategic
+                        innovation and digital transformation.
+                    </p>
+                    <a href="https://www.chimesgroup.in/" target="_blank" rel="noopener" class="client-link">
+                        Visit Website
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content glass">
+                <h2>Why TechImbue?</h2>
+                <p>
+                    At TechImbue, we blend deep technical expertise with innovative thinking to deliver
+                    solutions that don't just meet current needs—they anticipate future challenges.
+                    Our approach combines cutting-edge technology with practical, scalable implementations.
+                </p>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Client Satisfaction</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Support Available</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">Custom</div>
+                        <div class="stat-label">Solutions Tailored</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section id="founder" class="founder">
+        <div class="container">
+            <h2 class="section-title">About Our Founder</h2>
+            <p class="section-subtitle">Leadership driven by expertise, innovation, and a passion for technology</p>
+
+            <div class="founder-content glass">
+                <div class="founder-info">
+                    <h3>Anindya Roy</h3>
+                    <p class="founder-title">Founder & Chief Architect</p>
+                    <a href="https://www.linkedin.com/in/ranindya/" target="_blank" rel="noopener" class="linkedin-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                        Connect on LinkedIn
+                    </a>
+
+                    <div class="founder-bio">
+                        <p>
+                            With over <strong>25 years of experience</strong> in the technology industry, Anindya Roy
+                            has built a distinguished career spanning infrastructure architecture, cybersecurity,
+                            and cutting-edge AI implementations. Currently serving as a fractional Chief Technology Officer and 
+                            fractional CISO at multiple organizations such as Digital Insights in Dubai and Inspire InfoSol in India, he brings unparalleled expertise to TechImbue's mission of
+                            delivering sophisticated technology solutions.
+                        </p>
+
+                        <div class="expertise-areas">
+                            <h4>Core Expertise</h4>
+                            <div class="expertise-tags">
+                                <span class="expertise-tag">Infrastructure & Cloud Architecture</span>
+                                <span class="expertise-tag">Cybersecurity & Compliance</span>
+                                <span class="expertise-tag">AI & Automation</span>
+                                <span class="expertise-tag">DevOps & CI/CD</span>
+                            </div>
+                        </div>
+
+                        <p>
+                            Anindya's career journey reflects a deep commitment to technology excellence. From his early days
+                            as a <strong>Tech Magazine Reviewer and Author</strong>, where he helped shape technology discourse,
+                            to his current role architecting enterprise-scale solutions for government and corporate clients,
+                            he has consistently been at the forefront of technological innovation.
+                        </p>
+
+                        <p>
+                            As a <strong>published author</strong>, Anindya recently released
+                            <a href="https://www.amazon.fr/Gen-AI-Leaders-hurry-English-ebook/dp/B0FK3YQHRB" target="_blank" rel="noopener" class="book-link">
+                                "Gen AI for Leaders in a Hurry"
+                            </a>,
+                            demonstrating his thought leadership in artificial intelligence and its strategic applications
+                            for business transformation.
+                        </p>
+
+                        <div class="founder-philosophy">
+                            <h4>Philosophy & Vision</h4>
+                            <p>
+                                "Technology should be an enabler, not a constraint. At TechImbue, we believe in building
+                                solutions that are not only technically excellent but also pragmatic and scalable. Our
+                                approach is rooted in deep understanding of both technology and business objectives—ensuring
+                                that every solution we architect drives real value and competitive advantage."
+                            </p>
+                            <p>
+                                With a focus on <strong>practical innovation</strong>, Anindya leads TechImbue with a
+                                philosophy that balances cutting-edge technology adoption with proven engineering principles.
+                                His extensive experience across diverse industries—from airlines to government sectors—enables
+                                TechImbue to deliver context-aware solutions that truly understand client challenges.
+                            </p>
+                        </div>
+
+                        <div class="founder-credentials">
+                            <div class="credential-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                                </svg>
+                                <span>Certified in Cyber Forensics Fundamentals</span>
+                            </div>
+                            <div class="credential-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                                </svg>
+                                <span>Published Author - "Gen AI for Leaders in a Hurry"</span>
+                            </div>
+                            <div class="credential-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                                <span>3000+ Professional Network</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Section -->
+    <section id="book" class="book-section">
+        <div class="container">
+            <h2 class="section-title">Latest Publication</h2>
+            <p class="section-subtitle">Practical insights for business leaders navigating the AI revolution</p>
+
+            <div class="book-content glass">
+                <div class="book-cover-container">
+                    <img src="../book-cover.jpg" alt="Gen AI for Leaders in a Hurry - Book Cover" class="book-cover">
+                    <div class="book-badge">New Release</div>
+                </div>
+
+                <div class="book-details">
+                    <h3 class="book-title">Gen AI for Leaders in a Hurry</h3>
+                    <p class="book-author">by Anindya Roy</p>
+
+                    <div class="book-description">
+                        <p>
+                            A comprehensive guide for business leaders who need to understand and leverage
+                            Generative AI quickly and effectively. This book cuts through the hype and delivers
+                            practical, actionable strategies for integrating AI into your organization.
+                        </p>
+                        <p>
+                            Written from 25+ years of technology leadership experience, this book provides:
+                        </p>
+                        <ul class="book-features">
+                            <li>Clear explanations of Gen AI capabilities without technical jargon</li>
+                            <li>Practical frameworks for AI strategy and implementation</li>
+                            <li>Real-world case studies and lessons learned</li>
+                            <li>Risk management and ethical considerations</li>
+                            <li>Step-by-step guidance for AI transformation</li>
+                        </ul>
+                        <p class="book-cta-text">
+                            Perfect for executives, managers, and decision-makers who want to lead with confidence
+                            in the AI era—without getting lost in technical complexity.
+                        </p>
+                    </div>
+
+                    <div class="book-actions">
+                        <a href="https://www.amazon.in/Gen-Leaders-hurry-Anindya-Roy-ebook/dp/B0FK3YQHRB/"
+                           target="_blank"
+                           rel="noopener"
+                           class="btn-primary btn-large">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                            </svg>
+                            Buy on Amazon
+                        </a>
+                        <a href="https://www.amazon.in/Gen-Leaders-hurry-Anindya-Roy-ebook/dp/B0FK3YQHRB/"
+                           target="_blank"
+                           rel="noopener"
+                           class="btn-secondary btn-large">
+                            Preview Sample
+                        </a>
+                    </div>
+
+                    <div class="book-formats">
+                        <span class="format-badge">📱 Kindle Edition</span>
+                        <span class="format-badge">🌍 Available Worldwide</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content glass">
+                <h2>Let's Build Something Extraordinary</h2>
+                <p>Ready to transform your technology infrastructure? Get in touch to discuss how we can help.</p>
+                <div class="contact-methods">
+                    <a href="mailto:anindya@techimbue.com" class="contact-method">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <span>anindya@techimbue.com</span>
+                    </a>
+                </div>
+                <a href="mailto:anindya@techimbue.com" class="btn-primary btn-large">Start a Conversation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 TechImbue. All rights reserved.</p>
+            <p class="footer-tagline">Technology. Inspiring.</p>
+            <p style="margin-top:8px;font-size:13px;opacity:0.7;">Vibe Computing&trade; — coined by <a href="/vibe-computing" style="color:inherit;">Anindya Roy</a>, Dec 2025.</p>
+        </div>
+    </footer>
+
+    <!-- Schema.org Structured Data for SEO and AI -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Organization",
+                "@id": "https://techimbue.com/#organization",
+                "name": "TechImbue",
+                "url": "https://techimbue.com",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://techimbue.com/logo.jpg",
+                    "width": "300",
+                    "height": "60"
+                },
+                "description": "TechImbue provides cutting-edge infrastructure consultancy, cybersecurity, custom AI workflows, local AI solutions, and AI interpretability services for enterprises.",
+                "email": "anindya@techimbue.com",
+                "founder": {
+                    "@type": "Person",
+                    "@id": "https://techimbue.com/#founder"
+                },
+                "sameAs": [
+                    "https://www.linkedin.com/in/ranindya/"
+                ],
+                "areaServed": "Worldwide",
+                "slogan": "Technology. Inspiring."
+            },
+            {
+                "@type": "Person",
+                "@id": "https://techimbue.com/#founder",
+                "name": "Anindya Roy",
+                "jobTitle": "Founder & Chief Architect",
+                "worksFor": {
+                    "@type": "Organization",
+                    "@id": "https://techimbue.com/#organization"
+                },
+                "url": "https://www.linkedin.com/in/ranindya/",
+                "description": "Technology leader with 25+ years of experience in infrastructure architecture, cybersecurity, and AI implementations. Chief Technology Officer at Digital Insights, Dubai.",
+                "knowsAbout": [
+                    "Infrastructure Architecture",
+                    "Cybersecurity",
+                    "Artificial Intelligence",
+                    "Cloud Computing",
+                    "DevOps",
+                    "Kubernetes",
+                    "Network Operations",
+                    "Security Operations"
+                ],
+                "alumniOf": "Certified in Cyber Forensics Fundamentals",
+                "sameAs": [
+                    "https://www.linkedin.com/in/ranindya/",
+                    "https://www.amazon.in/Gen-Leaders-hurry-Anindya-Roy-ebook/dp/B0FK3YQHRB/"
+                ]
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://techimbue.com/#website",
+                "url": "https://techimbue.com",
+                "name": "TechImbue",
+                "description": "Advanced Technology Solutions - Infrastructure, AI & Cybersecurity",
+                "publisher": {
+                    "@type": "Organization",
+                    "@id": "https://techimbue.com/#organization"
+                },
+                "inLanguage": "en-US"
+            },
+            {
+                "@type": "ProfessionalService",
+                "@id": "https://techimbue.com/#service-infrastructure",
+                "name": "Infrastructure Consultancy",
+                "provider": {
+                    "@type": "Organization",
+                    "@id": "https://techimbue.com/#organization"
+                },
+                "serviceType": "Infrastructure Consultancy",
+                "description": "Strategic guidance for building scalable, resilient infrastructure. From cloud architecture to on-premise solutions.",
+                "areaServed": "Worldwide"
+            },
+            {
+                "@type": "ProfessionalService",
+                "@id": "https://techimbue.com/#service-cybersecurity",
+                "name": "CyberSecurity Services",
+                "provider": {
+                    "@type": "Organization",
+                    "@id": "https://techimbue.com/#organization"
+                },
+                "serviceType": "CyberSecurity",
+                "description": "Comprehensive security solutions including SOC design, penetration testing, compliance audits, and incident response.",
+                "areaServed": "Worldwide"
+            },
+            {
+                "@type": "ProfessionalService",
+                "@id": "https://techimbue.com/#service-ai",
+                "name": "Custom AI Workflows",
+                "provider": {
+                    "@type": "Organization",
+                    "@id": "https://techimbue.com/#organization"
+                },
+                "serviceType": "Artificial Intelligence Consulting",
+                "description": "Bespoke AI solutions including generative AI, local AI deployments, and AI interpretability services.",
+                "areaServed": "Worldwide"
+            },
+            {
+                "@type": "Book",
+                "@id": "https://techimbue.com/#book",
+                "name": "Gen AI for Leaders in a Hurry",
+                "author": {
+                    "@type": "Person",
+                    "@id": "https://techimbue.com/#founder"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Amazon Kindle Direct Publishing"
+                },
+                "description": "A comprehensive guide for business leaders who need to understand and leverage Generative AI quickly and effectively.",
+                "url": "https://www.amazon.in/Gen-Leaders-hurry-Anindya-Roy-ebook/dp/B0FK3YQHRB/",
+                "bookFormat": "EBook",
+                "inLanguage": "en",
+                "numberOfPages": "Kindle Edition",
+                "image": "https://techimbue.com/book-cover.jpg"
+            }
+        ]
+    }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,21 +1,46 @@
 [
   {
+    "id": "the-origin-of-vibe-computing",
+    "title": "The Origin of Vibe Computing: How a Term Was Born in December 2025",
+    "slug": "the-origin-of-vibe-computing",
+    "date": "2025-12-09",
+    "author": "Anindya Roy",
+    "excerpt": "The term 'vibe computing' was coined in December 2025 \u2014 before consumer AI agents made it a buzzword. Here is the real story of how it started, what it means, and why attribution matters.",
+    "tags": [
+      "Vibe Computing",
+      "AI",
+      "TechImbue",
+      "Infrastructure",
+      "DevOps"
+    ],
+    "readTime": "4 min read"
+  },
+  {
     "id": "choosing-right-llm-local-reasoning",
     "title": "Choosing the Right LLM for Local Reasoning Tasks: Why Bigger Isn't Always Better",
     "slug": "choosing-right-llm-local-reasoning",
     "date": "2024-12-20",
     "author": "Anindya Roy",
-    "excerpt": "The right model isn't the biggest — it's the most focused. Why specialized text-only models like Magistral 24B outperform massive multimodal LLMs for memory-bound on-premise AI workflows.",
-    "tags": ["LLM", "LocalAI", "OnPremise", "ModelSelection", "RAG", "AIAgents", "EdgeComputing", "Efficiency"],
+    "excerpt": "The right model isn't the biggest \u2014 it's the most focused. Why specialized text-only models like Magistral 24B outperform massive multimodal LLMs for memory-bound on-premise AI workflows.",
+    "tags": [
+      "LLM",
+      "LocalAI",
+      "OnPremise",
+      "ModelSelection",
+      "RAG",
+      "AIAgents",
+      "EdgeComputing",
+      "Efficiency"
+    ],
     "linkedinUrl": "https://www.linkedin.com/posts/ranindya_choosing-the-right-llm-for-local-reasoning-activity-7341848692850651138-wgP-",
     "content": [
       {
         "type": "paragraph",
-        "text": "There's a pervasive assumption in the AI world: <strong>bigger models are better models</strong>. More parameters, more capabilities, more impressive benchmarks. But when you're deploying AI locally — on-premise servers, edge devices, or resource-constrained environments — this assumption breaks down fast."
+        "text": "There's a pervasive assumption in the AI world: <strong>bigger models are better models</strong>. More parameters, more capabilities, more impressive benchmarks. But when you're deploying AI locally \u2014 on-premise servers, edge devices, or resource-constrained environments \u2014 this assumption breaks down fast."
       },
       {
         "type": "paragraph",
-        "text": "The reality? <strong>The right model isn't the biggest — it's the most focused</strong>."
+        "text": "The reality? <strong>The right model isn't the biggest \u2014 it's the most focused</strong>."
       },
       {
         "type": "paragraph",
@@ -192,9 +217,9 @@
       {
         "type": "list",
         "items": [
-          "1. User query → embedding model → vector search",
-          "2. Retrieved documents → <strong>LLM for analysis and synthesis</strong>",
-          "3. Generated response → formatting and delivery"
+          "1. User query \u2192 embedding model \u2192 vector search",
+          "2. Retrieved documents \u2192 <strong>LLM for analysis and synthesis</strong>",
+          "3. Generated response \u2192 formatting and delivery"
         ]
       },
       {
@@ -204,9 +229,9 @@
       {
         "type": "list",
         "items": [
-          "1. User intent → <strong>LLM for task planning</strong>",
+          "1. User intent \u2192 <strong>LLM for task planning</strong>",
           "2. Execute tool calls (API, database, file system)",
-          "3. Tool results → <strong>LLM for reasoning and next action</strong>",
+          "3. Tool results \u2192 <strong>LLM for reasoning and next action</strong>",
           "4. Repeat until goal achieved"
         ]
       },
@@ -217,9 +242,9 @@
       {
         "type": "list",
         "items": [
-          "1. Input text → <strong>LLM for classification/extraction</strong>",
-          "2. Extracted entities → database lookup",
-          "3. Context + entities → <strong>LLM for final output</strong>"
+          "1. Input text \u2192 <strong>LLM for classification/extraction</strong>",
+          "2. Extracted entities \u2192 database lookup",
+          "3. Context + entities \u2192 <strong>LLM for final output</strong>"
         ]
       },
       {
@@ -604,7 +629,7 @@
       },
       {
         "type": "paragraph",
-        "text": "The AI industry's obsession with ever-larger models is understandable — they're impressive and capable. But for practical deployments, especially local/on-premise, <strong>focused trumps massive</strong>."
+        "text": "The AI industry's obsession with ever-larger models is understandable \u2014 they're impressive and capable. But for practical deployments, especially local/on-premise, <strong>focused trumps massive</strong>."
       },
       {
         "type": "paragraph",
@@ -618,18 +643,29 @@
   },
   {
     "id": "ai-driven-soc-digital-insights",
-    "title": "AI-Driven SOC Is No Longer a Concept — It's Our Reality at Digital Insights",
+    "title": "AI-Driven SOC Is No Longer a Concept \u2014 It's Our Reality at Digital Insights",
     "slug": "ai-driven-soc-digital-insights",
     "date": "2025-11-03",
     "author": "Anindya Roy",
     "originalAuthor": "Prathana Mahendran (Cyber Security Consultant, Digital Insights)",
-    "excerpt": "How we operationalized AI within our Security Operations Center using RAG agents, n8n orchestration, and open-source LLMs. Real production deployment, not just demos — battle-tested against jailbreaks, prompt injection, and messy telemetry.",
-    "tags": ["SecurityOps", "CISO", "RAG", "Automation", "LLM", "OpenSource", "AISafety", "SIEM", "SOC", "CyberSecurity"],
+    "excerpt": "How we operationalized AI within our Security Operations Center using RAG agents, n8n orchestration, and open-source LLMs. Real production deployment, not just demos \u2014 battle-tested against jailbreaks, prompt injection, and messy telemetry.",
+    "tags": [
+      "SecurityOps",
+      "CISO",
+      "RAG",
+      "Automation",
+      "LLM",
+      "OpenSource",
+      "AISafety",
+      "SIEM",
+      "SOC",
+      "CyberSecurity"
+    ],
     "linkedinUrl": "https://www.linkedin.com/posts/ranindya_securityops-ciso-rag-activity-7391075030996230144-LDO0",
     "content": [
       {
         "type": "paragraph",
-        "text": "<em>This post highlights groundbreaking work by <strong>Prathana Mahendran</strong>, Cyber Security Consultant at Digital Insights, along with contributions from myself and <strong>Sayanth Sreekanth</strong>. The following represents real production deployment of AI-driven security operations — not research, not proof-of-concept, but operational reality.</em>"
+        "text": "<em>This post highlights groundbreaking work by <strong>Prathana Mahendran</strong>, Cyber Security Consultant at Digital Insights, along with contributions from myself and <strong>Sayanth Sreekanth</strong>. The following represents real production deployment of AI-driven security operations \u2014 not research, not proof-of-concept, but operational reality.</em>"
       },
       {
         "type": "paragraph",
@@ -671,7 +707,7 @@
       },
       {
         "type": "paragraph",
-        "text": "We needed <strong>intelligent automation</strong> — not just rule-based playbooks, but systems that can understand context, reason about threats, and provide security analysts with clear, actionable summaries."
+        "text": "We needed <strong>intelligent automation</strong> \u2014 not just rule-based playbooks, but systems that can understand context, reason about threats, and provide security analysts with clear, actionable summaries."
       },
       {
         "type": "heading",
@@ -679,7 +715,7 @@
       },
       {
         "type": "paragraph",
-        "text": "Our approach centers on <strong>Retrieval-Augmented Generation (RAG)</strong> — a technique that combines large language models with real-time data retrieval to generate contextually relevant responses."
+        "text": "Our approach centers on <strong>Retrieval-Augmented Generation (RAG)</strong> \u2014 a technique that combines large language models with real-time data retrieval to generate contextually relevant responses."
       },
       {
         "type": "paragraph",
@@ -691,7 +727,7 @@
       },
       {
         "type": "paragraph",
-        "text": "<a href='https://n8n.io' target='_blank'>n8n</a> is an open-source workflow automation platform — think Zapier, but self-hosted and infinitely extensible. We chose it because:"
+        "text": "<a href='https://n8n.io' target='_blank'>n8n</a> is an open-source workflow automation platform \u2014 think Zapier, but self-hosted and infinitely extensible. We chose it because:"
       },
       {
         "type": "list",
@@ -820,7 +856,7 @@
       },
       {
         "type": "paragraph",
-        "text": "These aren't theoretical protections — they've been <strong>red-teamed and battle-tested</strong>."
+        "text": "These aren't theoretical protections \u2014 they've been <strong>red-teamed and battle-tested</strong>."
       },
       {
         "type": "heading",
@@ -969,7 +1005,7 @@
       },
       {
         "type": "paragraph",
-        "text": "Security logs are <em>never</em> clean. Malformed JSON, incomplete fields, inconsistent timestamps, encoding issues — all common."
+        "text": "Security logs are <em>never</em> clean. Malformed JSON, incomplete fields, inconsistent timestamps, encoding issues \u2014 all common."
       },
       {
         "type": "paragraph",
@@ -1005,7 +1041,7 @@
       },
       {
         "type": "paragraph",
-        "text": "Analysts need fast responses — waiting 30 seconds for an answer kills productivity."
+        "text": "Analysts need fast responses \u2014 waiting 30 seconds for an answer kills productivity."
       },
       {
         "type": "paragraph",
@@ -1034,10 +1070,10 @@
       {
         "type": "list",
         "items": [
-          "<strong>Prathana Mahendran</strong> — Cyber Security Consultant who led the architecture and implementation of the RAG framework and BRUCE system",
-          "<strong>Anindya Roy</strong> (myself) — Chief Technology Officer at Digital Insights, providing strategic direction and infrastructure expertise",
-          "<strong>Sayanth Sreekanth</strong> — Contributing to LLM integration and security guardrails",
-          "<strong>Digital Insights SOC Team</strong> — Security analysts who tested, provided feedback, and helped refine the system"
+          "<strong>Prathana Mahendran</strong> \u2014 Cyber Security Consultant who led the architecture and implementation of the RAG framework and BRUCE system",
+          "<strong>Anindya Roy</strong> (myself) \u2014 Chief Technology Officer at Digital Insights, providing strategic direction and infrastructure expertise",
+          "<strong>Sayanth Sreekanth</strong> \u2014 Contributing to LLM integration and security guardrails",
+          "<strong>Digital Insights SOC Team</strong> \u2014 Security analysts who tested, provided feedback, and helped refine the system"
         ]
       },
       {
@@ -1068,16 +1104,16 @@
       {
         "type": "list",
         "items": [
-          "✅ <strong>Actually deployed:</strong> Running in production, handling real threats",
-          "✅ <strong>Self-hosted:</strong> Complete data sovereignty and control",
-          "✅ <strong>Open source:</strong> Based on OSS tools, no vendor lock-in",
-          "✅ <strong>Battle-tested:</strong> Survived red team engagements and real-world attacks",
-          "✅ <strong>Measurable results:</strong> Documented efficiency gains and improved detection"
+          "\u2705 <strong>Actually deployed:</strong> Running in production, handling real threats",
+          "\u2705 <strong>Self-hosted:</strong> Complete data sovereignty and control",
+          "\u2705 <strong>Open source:</strong> Based on OSS tools, no vendor lock-in",
+          "\u2705 <strong>Battle-tested:</strong> Survived red team engagements and real-world attacks",
+          "\u2705 <strong>Measurable results:</strong> Documented efficiency gains and improved detection"
         ]
       },
       {
         "type": "paragraph",
-        "text": "This proves that <strong>AI-driven SOCs are viable today</strong> — not in 5 years, not with massive budgets, but <em>now</em> with open-source tools and smart engineering."
+        "text": "This proves that <strong>AI-driven SOCs are viable today</strong> \u2014 not in 5 years, not with massive budgets, but <em>now</em> with open-source tools and smart engineering."
       },
       {
         "type": "heading",
@@ -1115,7 +1151,7 @@
           "<strong>Avoid cloud LLMs for sensitive data:</strong> Self-host open-source models instead",
           "<strong>RAG is essential:</strong> LLMs without real-time data retrieval hallucinate too much",
           "<strong>Plan for adversarial attacks:</strong> Assume attackers will try to manipulate your AI",
-          "<strong>Test with real data:</strong> Demos with clean data are worthless — test with production noise",
+          "<strong>Test with real data:</strong> Demos with clean data are worthless \u2014 test with production noise",
           "<strong>Involve your analysts:</strong> AI augments human expertise, doesn't replace it",
           "<strong>Measure everything:</strong> Track false positives, response times, analyst satisfaction",
           "<strong>Start small, iterate:</strong> Don't try to automate everything at once"
@@ -1123,7 +1159,7 @@
       },
       {
         "type": "paragraph",
-        "text": "AI-driven SOCs are no longer science fiction. They're operational reality. The question isn't <em>if</em> your SOC will adopt AI — it's <em>when</em> and <em>how well</em> you'll implement it."
+        "text": "AI-driven SOCs are no longer science fiction. They're operational reality. The question isn't <em>if</em> your SOC will adopt AI \u2014 it's <em>when</em> and <em>how well</em> you'll implement it."
       },
       {
         "type": "paragraph",
@@ -1142,12 +1178,21 @@
     "date": "2025-05-24",
     "author": "Anindya Roy",
     "excerpt": "How I transformed Meta Quest 3 into a portable productivity powerhouse for accessing multiple computers from anywhere. Self-hosted remote access, VR workspace, and zero compromises on workflow efficiency.",
-    "tags": ["MetaQuest3", "VR", "RemoteWork", "Productivity", "Guacamole", "ZeroTier", "SelfHosted", "WorkFromAnywhere"],
+    "tags": [
+      "MetaQuest3",
+      "VR",
+      "RemoteWork",
+      "Productivity",
+      "Guacamole",
+      "ZeroTier",
+      "SelfHosted",
+      "WorkFromAnywhere"
+    ],
     "linkedinUrl": "https://www.linkedin.com/pulse/work-anywhere-my-ultimate-meta-quest-3-productivity-workflow-roy-utkyf/",
     "content": [
       {
         "type": "paragraph",
-        "text": "Remote work is everywhere, but most solutions still chain you to a physical desk or require carrying multiple devices. What if you could access <strong>all your computers</strong> — Windows desktop, Linux workstation, laptop — from a single, portable device you can use anywhere? That's exactly what I've built with the Meta Quest 3."
+        "text": "Remote work is everywhere, but most solutions still chain you to a physical desk or require carrying multiple devices. What if you could access <strong>all your computers</strong> \u2014 Windows desktop, Linux workstation, laptop \u2014 from a single, portable device you can use anywhere? That's exactly what I've built with the Meta Quest 3."
       },
       {
         "type": "paragraph",
@@ -1173,7 +1218,7 @@
       },
       {
         "type": "paragraph",
-        "text": "I needed something <strong>portable</strong>, <strong>secure</strong>, and <strong>powerful</strong> — a single device that could access everything without compromises."
+        "text": "I needed something <strong>portable</strong>, <strong>secure</strong>, and <strong>powerful</strong> \u2014 a single device that could access everything without compromises."
       },
       {
         "type": "heading",
@@ -1204,7 +1249,7 @@
       },
       {
         "type": "paragraph",
-        "text": "Guacamole is the secret weapon that makes this work. It's a <strong>clientless remote desktop gateway</strong> — you access it through a web browser, so it works on any device with internet access."
+        "text": "Guacamole is the secret weapon that makes this work. It's a <strong>clientless remote desktop gateway</strong> \u2014 you access it through a web browser, so it works on any device with internet access."
       },
       {
         "type": "paragraph",
@@ -1300,7 +1345,7 @@
       },
       {
         "type": "paragraph",
-        "text": "<strong>Keychron K3 Pro</strong> — Ultra-slim mechanical keyboard with:"
+        "text": "<strong>Keychron K3 Pro</strong> \u2014 Ultra-slim mechanical keyboard with:"
       },
       {
         "type": "list",
@@ -1314,7 +1359,7 @@
       },
       {
         "type": "paragraph",
-        "text": "<strong>Cherry Dot Mouse</strong> — Minimalist Bluetooth mouse:"
+        "text": "<strong>Cherry Dot Mouse</strong> \u2014 Minimalist Bluetooth mouse:"
       },
       {
         "type": "list",
@@ -1345,7 +1390,7 @@
           "<strong>Step 3:</strong> Log in to Guacamole (2FA enabled for security)",
           "<strong>Step 4:</strong> Select which machine to connect to: Windows desktop (RDP), Linux workstation (SSH), or laptop (VNC)",
           "<strong>Step 5:</strong> Work seamlessly with full keyboard/mouse control",
-          "<strong>Step 6:</strong> Switch between machines using browser tabs — no disconnecting/reconnecting needed"
+          "<strong>Step 6:</strong> Switch between machines using browser tabs \u2014 no disconnecting/reconnecting needed"
         ]
       },
       {
@@ -1383,7 +1428,7 @@
           "Virtual screens can be as large as I want",
           "Multiple windows arranged in 3D space",
           "No physical desk space constraints",
-          "Privacy — no one can see what you're working on"
+          "Privacy \u2014 no one can see what you're working on"
         ]
       },
       {
@@ -1562,7 +1607,7 @@
       },
       {
         "type": "paragraph",
-        "text": "For now, this setup gives me a taste of that future — and it works <em>today</em>."
+        "text": "For now, this setup gives me a taste of that future \u2014 and it works <em>today</em>."
       },
       {
         "type": "heading",
@@ -1631,13 +1676,22 @@
     "date": "2025-10-24",
     "author": "Anindya Roy",
     "excerpt": "How I built a professional business website in hours (not weeks) using AI-powered development, version control, and free hosting. Zero cost, zero build tools, maximum impact.",
-    "tags": ["ClaudeCode", "Anthropic", "CloudflarePages", "GitHub", "WebDevelopment", "AI", "StaticSite", "NoCode"],
+    "tags": [
+      "ClaudeCode",
+      "Anthropic",
+      "CloudflarePages",
+      "GitHub",
+      "WebDevelopment",
+      "AI",
+      "StaticSite",
+      "NoCode"
+    ],
     "linkedinUrl": "https://www.linkedin.com/posts/ranindya_anthropic-claude-code-github-cloudflare-activity-7387534229800316928-eNwL",
     "videoUrl": "https://www.linkedin.com/posts/ranindya_anthropic-claude-code-github-cloudflare-activity-7387534229800316928-eNwL",
     "content": [
       {
         "type": "paragraph",
-        "text": "Building a professional business website typically takes weeks of development, design iterations, and deployment configurations. What if I told you it could be done in <strong>hours</strong> — with zero hosting costs, zero build tools, and AI handling the entire development workflow?"
+        "text": "Building a professional business website typically takes weeks of development, design iterations, and deployment configurations. What if I told you it could be done in <strong>hours</strong> \u2014 with zero hosting costs, zero build tools, and AI handling the entire development workflow?"
       },
       {
         "type": "paragraph",
@@ -1678,7 +1732,7 @@
       {
         "type": "list",
         "items": [
-          "<strong>Design & Development:</strong> Created a modern glassmorphism design with dark monochrome theme and gold accents — matching TechImbue's brand identity perfectly",
+          "<strong>Design & Development:</strong> Created a modern glassmorphism design with dark monochrome theme and gold accents \u2014 matching TechImbue's brand identity perfectly",
           "<strong>Responsive Layout:</strong> Built mobile-first responsive design with proper breakpoints for tablet and desktop",
           "<strong>Interactive Features:</strong> Implemented smooth scrolling, intersection observers for scroll animations, modal systems, mobile menu, and parallax effects",
           "<strong>SEO Optimization:</strong> Added comprehensive meta tags, Open Graph data, Twitter cards, and Schema.org structured data",
@@ -1693,7 +1747,7 @@
       },
       {
         "type": "paragraph",
-        "text": "One of the best decisions was keeping everything pure static — no React, no Vue, no build pipeline, no webpack, no npm hell. Just clean HTML5, CSS3, and vanilla JavaScript (ES6+)."
+        "text": "One of the best decisions was keeping everything pure static \u2014 no React, no Vue, no build pipeline, no webpack, no npm hell. Just clean HTML5, CSS3, and vanilla JavaScript (ES6+)."
       },
       {
         "type": "paragraph",
@@ -1887,14 +1941,22 @@
     "slug": "distributed-ai-amd-strix-halo",
     "date": "2025-11-02",
     "author": "Anindya Roy",
-    "excerpt": "Two days of effort — very early results, but I'm genuinely excited about the possibilities. Successfully running a 70B parameter dense model across two AMD Strix Halo boxes connected via USB4/Thunderbolt 4.",
-    "tags": ["LLM", "AMD", "ROCm", "StrixHalo", "DistributedAI", "llamacpp", "EdgeInference"],
+    "excerpt": "Two days of effort \u2014 very early results, but I'm genuinely excited about the possibilities. Successfully running a 70B parameter dense model across two AMD Strix Halo boxes connected via USB4/Thunderbolt 4.",
+    "tags": [
+      "LLM",
+      "AMD",
+      "ROCm",
+      "StrixHalo",
+      "DistributedAI",
+      "llamacpp",
+      "EdgeInference"
+    ],
     "linkedinUrl": "https://www.linkedin.com/posts/ranindya_gmktec-llm-amd-activity-7390560217777905665-NuIm",
     "videoUrl": "https://www.linkedin.com/posts/ranindya_gmktec-llm-amd-activity-7390560217777905665-NuIm",
     "content": [
       {
         "type": "paragraph",
-        "text": "Two days of effort — very early results, but I'm genuinely excited about the possibilities."
+        "text": "Two days of effort \u2014 very early results, but I'm genuinely excited about the possibilities."
       },
       {
         "type": "paragraph",

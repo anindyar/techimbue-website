@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How VibeComputing Obfuscates Your Infrastructure Secrets | TechImbue</title>
+    <meta name="description" content="A deep dive into the regex-tokenization pipeline that keeps your IPs, hostnames, and secrets out of LLM context windows.">
+    <meta name="author" content="Anindya Roy">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://techimbue.com/blog/vibecomputing-obfuscation-pipeline">
+    
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="How VibeComputing Obfuscates Your Infrastructure Secrets Before Talking to AI">
+    <meta property="og:description" content="The LLM should never see a real IP address, hostname, or secret. Here's how VibeComputing makes that guarantee.">
+    <meta property="article:published_time" content="2026-08-05">
+    <meta property="article:author" content="Anindya Roy">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "headline": "How VibeComputing Obfuscates Your Infrastructure Secrets Before Talking to AI",
+        "datePublished": "2026-08-05",
+        "author": {"@type": "Person", "name": "Anindya Roy", "url": "https://www.linkedin.com/in/anindyar/"},
+        "publisher": {"@type": "Organization", "name": "TechImbue FZE", "url": "https://techimbue.com"},
+        "mainEntityOfPage": "https://techimbue.com/blog/vibecomputing-obfuscation-pipeline",
+        "about": {"@type": "SoftwareApplication", "name": "VibeComputing", "url": "https://vibecomputing.ai"},
+        "proficiencyLevel": "Expert"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "How VibeComputing Obfuscates Your Infrastructure Secrets Before Talking to AI",
+        "datePublished": "2026-08-05",
+        "author": {"@type": "Person", "name": "Anindya Roy", "url": "https://www.linkedin.com/in/anindyar/"},
+        "publisher": {"@type": "Organization", "name": "TechImbue FZE", "url": "https://techimbue.com"},
+        "mainEntityOfPage": "https://techimbue.com/blog/vibecomputing-obfuscation-pipeline"
+    }
+    </script>
+</head>
+<body>
+    <h1>How VibeComputing Obfuscates Your Infrastructure Secrets Before Talking to AI</h1>
+    <p><em>By Anindya Roy - August 5, 2026</em></p>
+    
+    <p>Every AI infrastructure tool faces the same uncomfortable truth: to get useful answers about your servers, you have to tell an AI about your servers. Your IP addresses. Your hostnames. Your database passwords. Your API keys.</p>
+    
+    <p>That data goes into a prompt. The prompt goes to an LLM. The LLM is operated by OpenAI, or Anthropic, or Google — companies with their own priorities, their own data retention policies, their own breach risk surfaces.</p>
+    
+    <p>Most tools handle this by saying "we don't store your data" or "we're SOC 2 compliant." Neither of those statements means the data isn't in the prompt. It is. It always is.</p>
+    
+    <p>We built <a href="https://vibecomputing.ai">VibeComputing</a> differently.</p>
+    
+    <h2>The Approach: Tokenize Before You Talk</h2>
+    
+    <p>The core idea is simple: <strong>the LLM should never see a real IP address, hostname, or secret. Ever.</strong></p>
+    
+    <p>When you type a command like <code>Check why 10.0.4.23 is slow and compare with db-prod.internal.corp</code>, VibeComputing intercepts this before it reaches the AI. The obfuscation pipeline runs in sequence:</p>
+    
+    <h3>Step 1: Secret Detection</h3>
+    <p>We scan for common secret formats: AWS access keys (<code>AKIA[0-9A-Z]{16}</code>), API keys (Stripe, GitHub, Slack, generic bearer tokens), private keys, connection strings, and hex/base64 blobs near keywords like "token", "secret", "key", "password". Each match is replaced with a typed token: <code>[SECRET_AWS_KEY_1]</code>, <code>[SECRET_DB_PASSWORD_1]</code>, etc.</p>
+    
+    <h3>Step 2: IP Address Tokenization</h3>
+    <p>Every IP address (IPv4 and IPv6) is regex-matched and replaced: <code>10.0.4.23</code> becomes <code>[IP_1]</code>, <code>192.168.1.0/24</code> becomes <code>[CIDR_1]</code>. A mapping table is maintained server-side. When the AI responds with <code>[IP_1]</code>, we reverse the substitution before displaying to you.</p>
+    
+    <h3>Step 3: Hostname Substitution</h3>
+    <p>Internal hostnames are detected via pattern matching and your registered host inventory. We don't just regex for hostnames — we cross-reference against your actual fleet inventory. The AI sees <code>[HOST_DATABASE_1]</code> which gives it <em>semantic context</em> (this is a database server) without revealing the <em>identity</em>.</p>
+    
+    <h3>Step 4: User-Specified Patterns</h3>
+    <p>You can add custom regex patterns for anything unique to your environment: internal domain names, customer identifiers, project codenames, employee names in log output.</p>
+    
+    <h2>What the LLM Actually Sees</h2>
+    <p>After obfuscation, your original query becomes: <code>Check why [IP_1] is slow and compare with [HOST_DATABASE_1]</code></p>
+    <p>The AI has everything it needs to reason about the problem — one server is slow, compare it to a database server — and nothing it needs to compromise your security.</p>
+    
+    <h2>The Round-Trip Problem</h2>
+    <p>The hard part isn't obfuscating the prompt — it's maintaining the mapping through a conversation. This is solved with a per-session mapping table that lives in memory only — never persisted to disk, never logged.</p>
+    
+    <h2>BYOK: When You Bring Your Own Keys</h2>
+    <p>VibeComputing supports BYOK (Bring Your Own Keys) for OpenAI, Anthropic, and other providers. The obfuscation still runs — we never bypass it, even with BYOK. Our servers act as a transparent proxy that strips secrets before forwarding to your chosen provider.</p>
+    
+    <h2>Honest Limitations</h2>
+    <ul>
+        <li><strong>Log content:</strong> Arbitrary secrets in log lines require your custom regex patterns.</li>
+        <li><strong>Semantic leakage:</strong> Tokenized hostnames like <code>[HOST_PAYMENT_1]</code> leak the role even if they hide the identity. This is by design — the AI needs role context to be useful.</li>
+        <li><strong>Adversarial extraction:</strong> Session-scoped in-memory mapping limits exposure to that session only.</li>
+    </ul>
+    
+    <h2>Why This Matters</h2>
+    <p>Obfuscation isn't a marketing feature. It's the architectural decision that makes AI-managed infrastructure safe enough to actually use. If the worst happens — a breach, a log leak, a training data ingestion — the data that escapes is tokens, not IPs. Not passwords. Not your production database hostname.</p>
+    
+    <p>That's not paranoia. That's defense in depth.</p>
+    
+    <hr>
+    <p><em>VibeComputing is in early access. Free tier: 3 systems, no credit card. <a href="https://vibecomputing.ai">Try it →</a></em></p>
+    <p><strong>Vibe Computing (TM)</strong> is a brand mark of TechImbue FZE.</p>
+</body>
+</html>

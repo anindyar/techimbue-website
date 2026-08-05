@@ -1,5 +1,18 @@
 [
   {
+    "slug": "vibecomputing-obfuscation-pipeline",
+    "title": "How VibeComputing Obfuscates Your Infrastructure Secrets Before Talking to AI",
+    "date": "2026-08-05",
+    "excerpt": "The LLM should never see a real IP address, hostname, or secret. A deep dive into the regex-tokenization pipeline that makes AI-managed infrastructure safe enough to use.",
+    "tags": [
+      "VibeComputing",
+      "Security",
+      "AI",
+      "DevOps",
+      "Obfuscation"
+    ]
+  },
+  {
     "id": "the-origin-of-vibe-computing",
     "title": "The Origin of Vibe Computing: How a Term Was Born in December 2025",
     "slug": "the-origin-of-vibe-computing",
